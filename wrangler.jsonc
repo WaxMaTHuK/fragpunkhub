@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "fragpunkhub",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-09-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fragpunkhub-db",
+      "database_id": "21128854-f888-4e10-8469-4f4207e2823b"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
