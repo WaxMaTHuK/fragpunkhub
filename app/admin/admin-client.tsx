@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowLeft, Check, FilePlus2, Link, Loader2, Save, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Check, FilePlus2, Image, Link, Loader2, Plus, Save, ShieldCheck, Trash2, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -13,11 +13,22 @@ import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
 type Draft = Omit<HubPost, "slug" | "updatedAt"> & { id: string };
 function makeDraft(post?: HubPost): Draft { return post ? { id: post.id, type: post.type, title: post.title, summary: post.summary, content: post.content, readTime: post.readTime, accent: post.accent, published: post.published, sortOrder: post.sortOrder } : { id: "", type: "lancer", title: "", summary: "", content: "", readTime: "5 мин", accent: "purple", published: true, sortOrder: 100 }; }
 
+const imagePattern = /^https:\/\/raw\.githubusercontent\.com\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i;
+const youtubePattern = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i;
+type ShardFields = { image: string; description: string; video: string; lancers: string[] };
+function parseShardContent(content: string): ShardFields {
+  const lines = content.split("\n").map((line) => line.trim()).filter(Boolean);
+  const images = lines.filter((line) => imagePattern.test(line));
+  return { image: images[0] || "", lancers: images.slice(1), video: lines.find((line) => youtubePattern.test(line)) || "", description: lines.filter((line) => !imagePattern.test(line) && !youtubePattern.test(line)).join("\n") };
+}
+function makeShardContent(fields: ShardFields) { return [fields.image, fields.description, ...fields.lancers, fields.video].map((line) => line.trim()).filter(Boolean).join("\n\n"); }
+
 export function AdminClient({ initialPosts, userName, signOutPath }: { initialPosts: HubPost[]; userName: string; signOutPath: string }) {
   const [posts, setPosts] = useState(initialPosts); const [draft, setDraft] = useState<Draft>(() => makeDraft(initialPosts[0])); const [saving, setSaving] = useState(false); const [message, setMessage] = useState("");
   const selected = useMemo(() => posts.find((post) => post.id === draft.id), [posts, draft.id]);
   function choose(post: HubPost) { setDraft(makeDraft(post)); setMessage(""); }
   function update<K extends keyof Draft>(key: K, value: Draft[K]) { setDraft((current) => ({ ...current, [key]: value })); setMessage(""); }
+  function updateShard(changes: Partial<ShardFields>) { const fields = { ...parseShardContent(draft.content), ...changes }; update("content", makeShardContent(fields)); }
   function addImageLink() {
     const url = window.prompt("Вставь прямую ссылку на картинку из GitHub (raw.githubusercontent.com):");
     if (!url?.trim()) return;
@@ -44,11 +55,18 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
           <div className="field"><Label>Раздел</Label><Select value={draft.type} onValueChange={(value) => update("type", value as PostType)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Object.entries(TYPE_LABELS).map(([value, label]) => <SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div>
           <div className="field"><Label htmlFor="readTime">Время чтения</Label><Input id="readTime" value={draft.readTime} onChange={(e) => update("readTime", e.target.value)} /></div>
           <div className="field field-wide"><Label htmlFor="summary">Короткое описание</Label><Input id="summary" value={draft.summary} onChange={(e) => update("summary", e.target.value)} placeholder="Одна понятная строка для карточки" /></div>
-          <div className="field field-wide"><div className="field-label-row"><Label htmlFor="content">Текст материала</Label><Button type="button" variant="outline" size="sm" onClick={addImageLink}><Link /> Добавить картинку</Button></div><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши описание и добавь ссылки на картинки или YouTube…" rows={12} /><p className="field-help">Для карты осколка: первая картинка — сама карта, следующие картинки — аватарки подходящих лансеров. Ссылку YouTube вставь отдельной строкой.</p></div>
+          {draft.type === "shard" ? <ShardCardEditor fields={parseShardContent(draft.content)} onChange={updateShard} /> : <div className="field field-wide"><div className="field-label-row"><Label htmlFor="content">Текст материала</Label><Button type="button" variant="outline" size="sm" onClick={addImageLink}><Link /> Добавить картинку</Button></div><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши гайд, новость или описание…" rows={12} /><p className="field-help">Загрузи картинку в GitHub, затем вставь её прямую ссылку. Её можно перенести на нужное место в тексте.</p></div>}
           <div className="field"><Label>Цвет карточки</Label><Select value={draft.accent} onValueChange={(value) => update("accent", value)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="purple">Фиолетовый</SelectItem><SelectItem value="pink">Розовый</SelectItem><SelectItem value="acid">Кислотный</SelectItem><SelectItem value="cyan">Голубой</SelectItem><SelectItem value="red">Красный</SelectItem></SelectContent></Select></div>
           <div className="field"><Label htmlFor="order">Порядок</Label><Input id="order" type="number" value={draft.sortOrder} onChange={(e) => update("sortOrder", Number(e.target.value))} /></div>
           <div className="publish-row field-wide"><div><Label htmlFor="published">Показывать посетителям</Label><p>Отключи, чтобы сохранить материал как черновик.</p></div><Switch id="published" checked={draft.published} onCheckedChange={(checked) => update("published", checked)} /></div>
         </div>{message && <div className={message.startsWith("Опубликовано") ? "save-message success" : "save-message"}>{message.startsWith("Опубликовано") && <Check size={17} />}{message}</div>}
       </section></div>
   </main>;
+}
+
+function ShardCardEditor({ fields, onChange }: { fields: ShardFields; onChange: (changes: Partial<ShardFields>) => void }) {
+  function addLancer() { const url = window.prompt("Вставь прямую ссылку на аватарку лансера:"); if (url?.trim()) onChange({ lancers: [...fields.lancers, url.trim()] }); }
+  function changeLancer(index: number, value: string) { onChange({ lancers: fields.lancers.map((item, itemIndex) => itemIndex === index ? value : item) }); }
+  function removeLancer(index: number) { onChange({ lancers: fields.lancers.filter((_, itemIndex) => itemIndex !== index) }); }
+  return <div className="field-wide shard-editor"><div className="shard-editor-title"><div><p className="eyebrow">Расширенный редактор</p><h2>Карта осколка</h2></div><span>Все поля появятся в каталоге автоматически</span></div><div className="shard-editor-grid"><div className="field field-wide"><Label htmlFor="shard-image"><Image size={16} /> Изображение карты</Label><Input id="shard-image" value={fields.image} onChange={(event) => onChange({ image: event.target.value })} placeholder="https://raw.githubusercontent.com/.../card.png" /><p className="field-help">Вставь прямую ссылку на изображение из папки public/images.</p></div><div className="field field-wide"><Label htmlFor="shard-description">Полное описание эффекта</Label><Textarea id="shard-description" value={fields.description} onChange={(event) => onChange({ description: event.target.value })} placeholder="Что делает карта, когда её лучше выбирать и как использовать…" rows={8} /></div><div className="field field-wide"><Label htmlFor="shard-video"><Video size={17} /> Видео с примером</Label><Input id="shard-video" value={fields.video} onChange={(event) => onChange({ video: event.target.value })} placeholder="https://www.youtube.com/watch?v=..." /></div><div className="field field-wide lancer-editor"><div className="field-label-row"><div><Label>Подходящие лансеры</Label><p className="field-help">Добавь прямые ссылки на их маленькие аватарки.</p></div><Button type="button" variant="outline" size="sm" onClick={addLancer}><Plus /> Добавить лансера</Button></div>{fields.lancers.length ? <div className="lancer-editor-list">{fields.lancers.map((lancer, index) => <div className="lancer-editor-row" key={index}>{lancer && imagePattern.test(lancer) ? <img src={lancer} alt="" /> : <span className="lancer-placeholder">{index + 1}</span>}<Input value={lancer} onChange={(event) => changeLancer(index, event.target.value)} placeholder="Ссылка на аватарку лансера" /><Button type="button" variant="ghost" size="icon" onClick={() => removeLancer(index)} aria-label="Удалить лансера"><Trash2 /></Button></div>)}</div> : <div className="lancer-editor-empty">Подходящие лансеры пока не добавлены</div>}</div></div></div>;
 }
