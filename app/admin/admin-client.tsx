@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowLeft, Check, FilePlus2, Loader2, Save, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Check, FilePlus2, Link, Loader2, Save, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -18,6 +18,13 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
   const selected = useMemo(() => posts.find((post) => post.id === draft.id), [posts, draft.id]);
   function choose(post: HubPost) { setDraft(makeDraft(post)); setMessage(""); }
   function update<K extends keyof Draft>(key: K, value: Draft[K]) { setDraft((current) => ({ ...current, [key]: value })); setMessage(""); }
+  function addImageLink() {
+    const url = window.prompt("Вставь прямую ссылку на картинку из GitHub (raw.githubusercontent.com):");
+    if (!url?.trim()) return;
+    if (!/^https:\/\/raw\.githubusercontent\.com\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i.test(url.trim())) { setMessage("Нужна прямая ссылка raw.githubusercontent.com на JPG, PNG или WEBP."); return; }
+    update("content", `${draft.content.trim()}${draft.content.trim() ? "\n\n" : ""}${url.trim()}\n`);
+    setMessage("Ссылка на картинку добавлена. Сохрани материал, чтобы опубликовать её.");
+  }
   async function save() {
     if (!draft.title.trim()) { setMessage("Добавь название материала."); return; }
     setSaving(true); setMessage("");
@@ -37,7 +44,7 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
           <div className="field"><Label>Раздел</Label><Select value={draft.type} onValueChange={(value) => update("type", value as PostType)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Object.entries(TYPE_LABELS).map(([value, label]) => <SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div>
           <div className="field"><Label htmlFor="readTime">Время чтения</Label><Input id="readTime" value={draft.readTime} onChange={(e) => update("readTime", e.target.value)} /></div>
           <div className="field field-wide"><Label htmlFor="summary">Короткое описание</Label><Input id="summary" value={draft.summary} onChange={(e) => update("summary", e.target.value)} placeholder="Одна понятная строка для карточки" /></div>
-          <div className="field field-wide"><Label htmlFor="content">Текст материала</Label><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши гайд, новость или описание…" rows={12} /></div>
+          <div className="field field-wide"><div className="field-label-row"><Label htmlFor="content">Текст материала</Label><Button type="button" variant="outline" size="sm" onClick={addImageLink}><Link /> Добавить картинку</Button></div><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши гайд, новость или описание…" rows={12} /><p className="field-help">Загрузи картинку в GitHub, затем вставь её прямую ссылку. Её можно перенести на нужное место в тексте.</p></div>
           <div className="field"><Label>Цвет карточки</Label><Select value={draft.accent} onValueChange={(value) => update("accent", value)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="purple">Фиолетовый</SelectItem><SelectItem value="pink">Розовый</SelectItem><SelectItem value="acid">Кислотный</SelectItem><SelectItem value="cyan">Голубой</SelectItem><SelectItem value="red">Красный</SelectItem></SelectContent></Select></div>
           <div className="field"><Label htmlFor="order">Порядок</Label><Input id="order" type="number" value={draft.sortOrder} onChange={(e) => update("sortOrder", Number(e.target.value))} /></div>
           <div className="publish-row field-wide"><div><Label htmlFor="published">Показывать посетителям</Label><p>Отключи, чтобы сохранить материал как черновик.</p></div><Switch id="published" checked={draft.published} onCheckedChange={(checked) => update("published", checked)} /></div>

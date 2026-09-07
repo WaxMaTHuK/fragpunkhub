@@ -40,6 +40,7 @@ const worker = {
     const adminOrAssetRequest = url.pathname.startsWith("/admin") || url.pathname.startsWith("/api/admin") || url.pathname.startsWith("/_vinext") || url.pathname === "/favicon.svg";
     if (env.MAINTENANCE_MODE === "on" && !adminOrAssetRequest) return maintenancePage();
 
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {
