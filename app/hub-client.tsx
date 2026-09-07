@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Search, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
 
 const filters: { value: "all" | PostType; label: string }[] = [
@@ -17,16 +16,6 @@ const categoryCards: { type: PostType; code: string; title: string; copy: string
   { type: "shard", code: "S", title: "Карты осколков", copy: "Комбинации и тактика" },
   { type: "map", code: "M", title: "Карты", copy: "Точки и раскидки" },
 ];
-
-function youtubeEmbedUrl(value: string) {
-  try {
-    const url = new URL(value);
-    let videoId = "";
-    if (url.hostname === "youtu.be") videoId = url.pathname.slice(1);
-    if (url.hostname.endsWith("youtube.com")) videoId = url.searchParams.get("v") || url.pathname.match(/^\/(?:shorts|embed)\/([^/?]+)/)?.[1] || "";
-    return /^[a-zA-Z0-9_-]{6,}$/.test(videoId) ? `https://www.youtube-nocookie.com/embed/${videoId}` : null;
-  } catch { return null; }
-}
 
 export function HubClient({ initialPosts, storageUnavailable = false }: { initialPosts: HubPost[]; storageUnavailable?: boolean }) {
   const [query, setQuery] = useState("");
@@ -52,7 +41,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
       </div></section>
       <section className="section-block" id="materials"><div className="section-title"><div><h2>Материалы</h2><p>{query ? `Результаты по запросу «${query}»` : "Подборка для быстрого старта"}</p></div><span>{visiblePosts.length} материалов</span></div>
         <div className="filter-row" aria-label="Фильтр материалов">{filters.map((item) => <Button key={item.value} type="button" variant="outline" className={filter === item.value ? "filter-chip active" : "filter-chip"} onClick={() => setFilter(item.value)}>{item.label}</Button>)}</div>
-        {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => <Sheet key={post.id}><SheetTrigger asChild><Button type="button" className={`post-card color-${post.accent}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small><span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span></Button></SheetTrigger><SheetContent className="article-sheet"><SheetHeader><p className="eyebrow">{TYPE_LABELS[post.type]}</p><SheetTitle>{post.title}</SheetTitle><SheetDescription>{post.summary}</SheetDescription></SheetHeader><div className="article-body">{post.content.split("\n").filter(Boolean).map((paragraph, index) => { const videoUrl = youtubeEmbedUrl(paragraph.trim()); return videoUrl ? <div className="video-embed" key={index}><iframe src={videoUrl} title={`Видео: ${post.title}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div> : <p key={index}>{paragraph}</p>; })}</div></SheetContent></Sheet>)}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
+        {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => <a key={post.id} className={`post-card color-${post.accent}`} href={`/materials/${post.slug}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small><span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span></a>)}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
       </section>
     </main>
     <footer><div className="wrap footer-row"><p>Неофициальный русскоязычный информационный портал. FragPunk и связанные материалы принадлежат их правообладателям.</p><strong>Проект <span>WaxMaTHuK</span></strong></div></footer>
