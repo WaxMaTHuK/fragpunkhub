@@ -5,8 +5,6 @@ import { posts } from "./schema";
 
 async function ensureSeeded() {
   const db = getDb();
-  const existing = await db.select({ id: posts.id }).from(posts).limit(1);
-  if (existing.length) return;
   await db.insert(posts).values(DEFAULT_POSTS.map((post) => ({ ...post }))).onConflictDoNothing();
 }
 
