@@ -28,7 +28,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
   return <div className="site-shell">
     <header className="site-header"><div className="wrap header-row">
       <a className="brand" href="#top" aria-label="FragPunk Hub — на главную"><span className="brand-mark" aria-hidden="true" /><span className="brand-text"><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a>
-      <nav className="main-nav" aria-label="Основная навигация"><a href="#materials">Материалы</a><a href="#sections">Разделы</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
+      <nav className="main-nav" aria-label="Основная навигация"><a href="#materials">Материалы</a><a href="/maps">Карты</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
     </div></header>
     <main className="wrap main-content" id="top">
       {storageUnavailable && <div className="storage-notice">Материалы временно показаны из резервной копии. Редактирование скоро снова будет доступно.</div>}
@@ -37,7 +37,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
         <aside className="season-card"><div className="season-status"><span /> Сейчас в игре</div><div className="season-copy"><h2>Shard Voyagers</h2><p>Сезон 6, глава 1. Новый этап начался 27 августа.</p><a href="https://www.fragpunk.com/news/" target="_blank" rel="noreferrer">Официальная новость <ArrowUpRight size={16} /></a></div></aside>
       </section>
       <section className="section-block" id="sections"><div className="section-title"><div><h2>Выбери раздел</h2><p>Самое нужное — в один клик.</p></div></div><div className="category-grid">
-        {categoryCards.map((category) => <Button key={category.type} type="button" className={`category-card accent-${category.type}`} onClick={() => { setFilter(category.type); document.querySelector("#materials")?.scrollIntoView({ behavior: "smooth" }); }}><span className="category-code">{category.code}</span><span><strong>{category.title}</strong><small>{category.copy}</small></span></Button>)}
+        {categoryCards.map((category) => category.type === "map" ? <a key={category.type} className={`category-card accent-${category.type}`} href="/maps"><span className="category-code">{category.code}</span><span><strong>{category.title}</strong><small>{category.copy}</small></span></a> : <Button key={category.type} type="button" className={`category-card accent-${category.type}`} onClick={() => { setFilter(category.type); document.querySelector("#materials")?.scrollIntoView({ behavior: "smooth" }); }}><span className="category-code">{category.code}</span><span><strong>{category.title}</strong><small>{category.copy}</small></span></Button>)}
       </div></section>
       <section className="section-block" id="materials"><div className="section-title"><div><h2>Материалы</h2><p>{query ? `Результаты по запросу «${query}»` : "Подборка для быстрого старта"}</p></div><span>{visiblePosts.length} материалов</span></div>
         <div className="filter-row" aria-label="Фильтр материалов">{filters.map((item) => <Button key={item.value} type="button" variant="outline" className={filter === item.value ? "filter-chip active" : "filter-chip"} onClick={() => setFilter(item.value)}>{item.label}</Button>)}</div>
