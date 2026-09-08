@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "FragPunk Hub — русская база знаний",
   description:
-    "Русская база знаний по FragPunk: лансеры, оружие, карты осколков, гайды и обновления.",
+    "Русская база знаний по FragPunk: лансеры, оружие, фрагмент карты, гайды и обновления.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
