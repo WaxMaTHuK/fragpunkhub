@@ -20,7 +20,7 @@ const categoryCards: { type: PostType; code: string; title: string; copy: string
 
 function weaponPreview(post: HubPost) {
   if (post.type !== "weapon") return "";
-  if (post.slug === "мясник-1fe0ee") return "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/weapons/myasnik.png";
+  if (post.slug === "мясник-1fe0ee") return "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/weapons/myasnik.jpg";
   return parseWeaponContent(post.content).image;
 }
 
