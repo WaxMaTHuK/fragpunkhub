@@ -11,12 +11,15 @@ const filters: { value: "all" | PostType; label: string }[] = [
   { value: "all", label: "Все" }, { value: "lancer", label: "Лансеры" }, { value: "weapon", label: "Оружие" },
   { value: "shard", label: "Фрагмент карты" }, { value: "map", label: "Карты" }, { value: "update", label: "Патчи" },
 ];
+const weaponGroups = [{ value: "all", label: "Все виды" }, { value: "shotguns", label: "Дробовики" }, { value: "smgs", label: "Пистолеты-пулемёты" }, { value: "assault-rifles", label: "Штурмовые винтовки" }, { value: "sniper-rifles", label: "Снайперские винтовки" }, { value: "marksman-rifles", label: "Марксманские винтовки" }, { value: "lmgs", label: "Ручные пулемёты" }, { value: "pistols", label: "Пистолеты" }, { value: "melee", label: "Ближний бой" }] as const;
 const categoryCards: { type: PostType; code: string; title: string; copy: string }[] = [
   { type: "lancer", code: "L", title: "Лансеры", copy: "Способности и советы" },
   { type: "weapon", code: "W", title: "Оружие", copy: "Характеристики и выбор" },
   { type: "shard", code: "S", title: "Фрагмент карты", copy: "Комбинации и тактика" },
   { type: "map", code: "M", title: "Карты", copy: "Точки и раскидки" },
 ];
+
+function weaponCategory(post: HubPost) { const weapon = parseWeaponContent(post.content); if (weapon.kind === "melee") return "melee"; if (post.slug === "мясник-1fe0ee") return "shotguns"; return weapon.category; }
 
 function weaponPreview(post: HubPost) {
   if (post.type !== "weapon") return "";
@@ -27,10 +30,11 @@ function weaponPreview(post: HubPost) {
 export function HubClient({ initialPosts, storageUnavailable = false }: { initialPosts: HubPost[]; storageUnavailable?: boolean }) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<"all" | PostType>("all");
+  const [weaponGroup, setWeaponGroup] = useState<(typeof weaponGroups)[number]["value"]>("all");
   const visiblePosts = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase("ru-RU");
-    return initialPosts.filter((post) => (filter === "all" || post.type === filter) && (!needle || `${post.title} ${post.summary} ${post.content}`.toLocaleLowerCase("ru-RU").includes(needle)));
-  }, [filter, initialPosts, query]);
+    return initialPosts.filter((post) => (filter === "all" || post.type === filter) && (filter !== "weapon" || weaponGroup === "all" || weaponCategory(post) === weaponGroup) && (!needle || `${post.title} ${post.summary} ${post.content}`.toLocaleLowerCase("ru-RU").includes(needle)));
+  }, [filter, initialPosts, query, weaponGroup]);
 
   return <div className="site-shell">
     <header className="site-header"><div className="wrap header-row">
@@ -47,7 +51,8 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
         {categoryCards.map((category) => category.type === "shard" ? <a key={category.type} className={`category-card accent-${category.type}`} href="/shard-cards"><span className="category-code">{category.code}</span><span><strong>{category.title}</strong><small>{category.copy}</small></span></a> : <Button key={category.type} type="button" className={`category-card accent-${category.type}`} onClick={() => { setFilter(category.type); document.querySelector("#materials")?.scrollIntoView({ behavior: "smooth" }); }}><span className="category-code">{category.code}</span><span><strong>{category.title}</strong><small>{category.copy}</small></span></Button>)}
       </div></section>
       <section className="section-block" id="materials"><div className="section-title"><div><h2>Материалы</h2><p>{query ? `Результаты по запросу «${query}»` : "Подборка для быстрого старта"}</p></div><span>{visiblePosts.length} материалов</span></div>
-        <div className="filter-row" aria-label="Фильтр материалов">{filters.map((item) => <Button key={item.value} type="button" variant="outline" className={filter === item.value ? "filter-chip active" : "filter-chip"} onClick={() => setFilter(item.value)}>{item.label}</Button>)}</div>
+        <div className="filter-row" aria-label="Фильтр материалов">{filters.map((item) => <Button key={item.value} type="button" variant="outline" className={filter === item.value ? "filter-chip active" : "filter-chip"} onClick={() => { setFilter(item.value); if (item.value !== "weapon") setWeaponGroup("all"); }}>{item.label}</Button>)}</div>
+        {filter === "weapon" && <div className="filter-row weapon-group-row" aria-label="Подгруппы оружия">{weaponGroups.map((group) => <Button key={group.value} type="button" variant="outline" className={weaponGroup === group.value ? "filter-chip active" : "filter-chip"} onClick={() => setWeaponGroup(group.value)}>{group.label}</Button>)}</div>}
         {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => { const preview = weaponPreview(post); return <a key={post.id} className={`post-card color-${post.accent}${preview ? " has-preview" : ""}`} href={`/materials/${post.slug}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small>{preview ? <img className="post-weapon-preview" src={preview} alt="" /> : <span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span>}</a>; })}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
       </section>
     </main>
