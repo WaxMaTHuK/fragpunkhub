@@ -28,7 +28,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
   return <div className="site-shell">
     <header className="site-header"><div className="wrap header-row">
       <a className="brand" href="#top" aria-label="FragPunk Hub — на главную"><span className="brand-mark" aria-hidden="true" /><span className="brand-text"><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a>
-      <nav className="main-nav" aria-label="Основная навигация"><a href="#materials">Материалы</a><a href="/shard-cards">Карты осколков</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
+      <nav className="main-nav" aria-label="Основная навигация"><a href="#materials">Материалы</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
     </div></header>
     <main className="wrap main-content" id="top">
       {storageUnavailable && <div className="storage-notice">Материалы временно показаны из резервной копии. Редактирование скоро снова будет доступно.</div>}
