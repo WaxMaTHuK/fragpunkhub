@@ -3,6 +3,7 @@ export type WeaponStyle = "aggressive" | "balanced" | "careful";
 export type WeaponControl = "easy" | "medium" | "hard";
 export type WeaponRole = "entry" | "support" | "universal";
 export type WeaponFireMode = "automatic" | "burst" | "single" | "bolt" | "pump";
+export type WeaponKind = "firearm" | "melee";
 
 export type WeaponFields = {
   image: string;
@@ -13,6 +14,7 @@ export type WeaponFields = {
   style: WeaponStyle;
   control: WeaponControl;
   role: WeaponRole;
+  kind: WeaponKind;
   fireMode: WeaponFireMode;
   damageHead: [string, string, string];
   damageBody: [string, string, string];
@@ -26,6 +28,18 @@ export type WeaponFields = {
   fireRate: string;
   zoom: string;
   adsTime: string;
+  meleeLightDamage: string;
+  meleeLightBackstab: string;
+  meleeLightSpecial: string;
+  meleeHeavyDamage: string;
+  meleeHeavyBackstab: string;
+  meleeHeavySpecial: string;
+  meleeChargeDamage: string;
+  meleeChargeBackstab: string;
+  meleeChargeSpecial: string;
+  dashDistance: string;
+  chargeTime: string;
+  attackArea: string;
 };
 
 const META_PREFIX = "[weapon-meta]";
@@ -34,9 +48,10 @@ const youtubePattern = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i;
 
 export const DEFAULT_WEAPON_FIELDS: WeaponFields = {
   image: "", description: "", video: "", lancers: [], range: "medium",
-  style: "balanced", control: "easy", role: "universal", fireMode: "automatic",
+  style: "balanced", control: "easy", role: "universal", kind: "firearm", fireMode: "automatic",
   damageHead: ["", "", ""], damageBody: ["", "", ""], damageLimbs: ["", "", ""],
   magazine: "", reserveAmmo: "", equipTime: "", crouchSpeed: "", walkSpeed: "", runSpeed: "", fireRate: "", zoom: "", adsTime: "",
+  meleeLightDamage: "", meleeLightBackstab: "", meleeLightSpecial: "", meleeHeavyDamage: "", meleeHeavyBackstab: "", meleeHeavySpecial: "", meleeChargeDamage: "", meleeChargeBackstab: "", meleeChargeSpecial: "", dashDistance: "", chargeTime: "", attackArea: "",
 };
 
 export function parseWeaponContent(content: string): WeaponFields {
