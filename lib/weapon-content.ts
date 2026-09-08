@@ -30,13 +30,10 @@ export type WeaponFields = {
   adsTime: string;
   meleeLightDamage: string;
   meleeLightBackstab: string;
-  meleeLightSpecial: string;
   meleeHeavyDamage: string;
   meleeHeavyBackstab: string;
-  meleeHeavySpecial: string;
   meleeChargeDamage: string;
   meleeChargeBackstab: string;
-  meleeChargeSpecial: string;
   dashDistance: string;
   chargeTime: string;
   attackArea: string;
@@ -51,7 +48,7 @@ export const DEFAULT_WEAPON_FIELDS: WeaponFields = {
   style: "balanced", control: "easy", role: "universal", kind: "firearm", fireMode: "automatic",
   damageHead: ["", "", ""], damageBody: ["", "", ""], damageLimbs: ["", "", ""],
   magazine: "", reserveAmmo: "", equipTime: "", crouchSpeed: "", walkSpeed: "", runSpeed: "", fireRate: "", zoom: "", adsTime: "",
-  meleeLightDamage: "", meleeLightBackstab: "", meleeLightSpecial: "", meleeHeavyDamage: "", meleeHeavyBackstab: "", meleeHeavySpecial: "", meleeChargeDamage: "", meleeChargeBackstab: "", meleeChargeSpecial: "", dashDistance: "", chargeTime: "", attackArea: "",
+  meleeLightDamage: "", meleeLightBackstab: "", meleeHeavyDamage: "", meleeHeavyBackstab: "", meleeChargeDamage: "", meleeChargeBackstab: "", dashDistance: "", chargeTime: "", attackArea: "",
 };
 
 export function parseWeaponContent(content: string): WeaponFields {
