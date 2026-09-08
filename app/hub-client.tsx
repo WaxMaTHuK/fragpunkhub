@@ -5,6 +5,7 @@ import { ArrowUpRight, Search, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
+import { parseWeaponContent } from "@/lib/weapon-content";
 
 const filters: { value: "all" | PostType; label: string }[] = [
   { value: "all", label: "Все" }, { value: "lancer", label: "Лансеры" }, { value: "weapon", label: "Оружие" },
@@ -16,6 +17,12 @@ const categoryCards: { type: PostType; code: string; title: string; copy: string
   { type: "shard", code: "S", title: "Фрагмент карты", copy: "Комбинации и тактика" },
   { type: "map", code: "M", title: "Карты", copy: "Точки и раскидки" },
 ];
+
+function weaponPreview(post: HubPost) {
+  if (post.type !== "weapon") return "";
+  if (post.slug === "мясник-1fe0ee") return "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/weapons/myasnik.png";
+  return parseWeaponContent(post.content).image;
+}
 
 export function HubClient({ initialPosts, storageUnavailable = false }: { initialPosts: HubPost[]; storageUnavailable?: boolean }) {
   const [query, setQuery] = useState("");
@@ -41,7 +48,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
       </div></section>
       <section className="section-block" id="materials"><div className="section-title"><div><h2>Материалы</h2><p>{query ? `Результаты по запросу «${query}»` : "Подборка для быстрого старта"}</p></div><span>{visiblePosts.length} материалов</span></div>
         <div className="filter-row" aria-label="Фильтр материалов">{filters.map((item) => <Button key={item.value} type="button" variant="outline" className={filter === item.value ? "filter-chip active" : "filter-chip"} onClick={() => setFilter(item.value)}>{item.label}</Button>)}</div>
-        {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => <a key={post.id} className={`post-card color-${post.accent}`} href={`/materials/${post.slug}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small><span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span></a>)}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
+        {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => { const preview = weaponPreview(post); return <a key={post.id} className={`post-card color-${post.accent}${preview ? " has-preview" : ""}`} href={`/materials/${post.slug}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small>{preview ? <img className="post-weapon-preview" src={preview} alt="" /> : <span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span>}</a>; })}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
       </section>
     </main>
     <footer><div className="wrap footer-row"><p>Неофициальный русскоязычный информационный портал. FragPunk и связанные материалы принадлежат их правообладателям.</p><strong>Проект <span>WaxMaTHuK</span></strong></div></footer>
