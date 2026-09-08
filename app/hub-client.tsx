@@ -8,12 +8,12 @@ import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
 
 const filters: { value: "all" | PostType; label: string }[] = [
   { value: "all", label: "Все" }, { value: "lancer", label: "Лансеры" }, { value: "weapon", label: "Оружие" },
-  { value: "shard", label: "Осколки" }, { value: "map", label: "Карты" }, { value: "update", label: "Патчи" },
+  { value: "shard", label: "Фрагмент карты" }, { value: "map", label: "Карты" }, { value: "update", label: "Патчи" },
 ];
 const categoryCards: { type: PostType; code: string; title: string; copy: string }[] = [
   { type: "lancer", code: "L", title: "Лансеры", copy: "Способности и советы" },
   { type: "weapon", code: "W", title: "Оружие", copy: "Характеристики и выбор" },
-  { type: "shard", code: "S", title: "Карты осколков", copy: "Комбинации и тактика" },
+  { type: "shard", code: "S", title: "Фрагмент карты", copy: "Комбинации и тактика" },
   { type: "map", code: "M", title: "Карты", copy: "Точки и раскидки" },
 ];
 
@@ -33,7 +33,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
     <main className="wrap main-content" id="top">
       {storageUnavailable && <div className="storage-notice">Материалы временно показаны из резервной копии. Редактирование скоро снова будет доступно.</div>}
       <section className="hero-grid">
-        <div className="finder-card"><p className="eyebrow">Русская база знаний</p><h1>Играй <span>умнее</span></h1><p className="hero-copy">Лансеры, оружие, карты осколков и понятные гайды без лишней воды.</p><label className="search-box"><span className="sr-only">Поиск по базе</span><Search size={21} aria-hidden="true" /><Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти лансера, оружие или гайд…" /></label></div>
+        <div className="finder-card"><p className="eyebrow">Русская база знаний</p><h1>Играй <span>умнее</span></h1><p className="hero-copy">Лансеры, оружие, фрагмент карты и понятные гайды без лишней воды.</p><label className="search-box"><span className="sr-only">Поиск по базе</span><Search size={21} aria-hidden="true" /><Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти лансера, оружие или гайд…" /></label></div>
         <aside className="season-card"><div className="season-status"><span /> Сейчас в игре</div><div className="season-copy"><h2>Shard Voyagers</h2><p>Сезон 6, глава 1. Новый этап начался 27 августа.</p><a href="https://www.fragpunk.com/news/" target="_blank" rel="noreferrer">Официальная новость <ArrowUpRight size={16} /></a></div></aside>
       </section>
       <section className="section-block" id="sections"><div className="section-title"><div><h2>Выбери раздел</h2><p>Самое нужное — в один клик.</p></div></div><div className="category-grid">
