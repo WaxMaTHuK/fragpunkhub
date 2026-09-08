@@ -4,6 +4,7 @@ export type WeaponControl = "easy" | "medium" | "hard";
 export type WeaponRole = "entry" | "support" | "universal";
 export type WeaponFireMode = "automatic" | "burst" | "single" | "bolt" | "pump";
 export type WeaponKind = "firearm" | "melee";
+export type WeaponCategory = "shotguns" | "smgs" | "assault-rifles" | "sniper-rifles" | "marksman-rifles" | "lmgs" | "pistols" | "melee";
 
 export type WeaponFields = {
   image: string;
@@ -15,6 +16,7 @@ export type WeaponFields = {
   control: WeaponControl;
   role: WeaponRole;
   kind: WeaponKind;
+  category: WeaponCategory;
   fireMode: WeaponFireMode;
   damageHead: [string, string, string];
   damageBody: [string, string, string];
@@ -45,7 +47,7 @@ const youtubePattern = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i;
 
 export const DEFAULT_WEAPON_FIELDS: WeaponFields = {
   image: "", description: "", video: "", lancers: [], range: "medium",
-  style: "balanced", control: "easy", role: "universal", kind: "firearm", fireMode: "automatic",
+  style: "balanced", control: "easy", role: "universal", kind: "firearm", category: "pistols", fireMode: "automatic",
   damageHead: ["", "", ""], damageBody: ["", "", ""], damageLimbs: ["", "", ""],
   magazine: "", reserveAmmo: "", equipTime: "", crouchSpeed: "", walkSpeed: "", runSpeed: "", fireRate: "", zoom: "", adsTime: "",
   meleeLightDamage: "", meleeLightBackstab: "", meleeHeavyDamage: "", meleeHeavyBackstab: "", meleeChargeDamage: "", meleeChargeBackstab: "", dashDistance: "", chargeTime: "", attackArea: "",
