@@ -1,0 +1,24 @@
+"use client";
+
+import { useState } from "react";
+import { Award, BookOpen, Crown, Edit3, Flame, LockKeyhole, Play, Save, Sparkles, Trophy, UserRound } from "lucide-react";
+
+type Profile = { nickname: string; avatar: string; frame: string; gameRank: string; xp: number; level: number; articlesRead: number; videosWatched: number; };
+
+const avatars = ["⚡", "🎯", "🦊", "👾", "🛡️", "🔥"];
+const frames = ["acid", "violet", "cyan", "pink"];
+const ranks = ["Новичок", "Бронза", "Серебро", "Золото", "Платина", "Алмаз"];
+
+export function ProfileClient({ initialProfile }: { initialProfile: Profile }) {
+  const [profile,setProfile]=useState(initialProfile); const [edit,setEdit]=useState(false); const [saving,setSaving]=useState(false); const [notice,setNotice]=useState("");
+  const nextXp = Math.max(100, profile.level * 100);
+  async function save(){ setSaving(true); setNotice(""); const r=await fetch("/api/profile",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(profile)}); setSaving(false); setEdit(false); setNotice(r.ok?"Профиль сохранён":"Не удалось сохранить профиль"); }
+  return <div className="site-shell profile-shell"><header className="site-header"><div className="wrap header-row"><a className="brand" href="/" aria-label="На главную"><span className="brand-mark"/><span className="brand-text"><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a><nav className="main-nav"><a href="/">Материалы</a><a className="profile-link active" href="/profile"><UserRound size={17}/> Кабинет</a><a className="admin-link" href="/admin">Редактор</a></nav></div></header><main className="wrap profile-main">
+    <div className="profile-topline"><a href="/">← Все материалы</a><span>Игрок сайта</span></div>
+    <section className="profile-hero"><div className={"profile-avatar frame-"+profile.frame}>{profile.avatar || "⚡"}</div><div className="profile-intro"><p className="eyebrow">Личный кабинет</p><div className="profile-name-row"><h1>{profile.nickname}</h1><button onClick={()=>setEdit(!edit)} aria-label="Редактировать профиль"><Edit3 size={18}/></button></div><p>{profile.gameRank || "Новичок"} в FragPunk · уровень сайта {profile.level}</p><div className="xp-line"><span style={{width:`${Math.min(100,profile.xp/nextXp*100)}%`}}/></div><small>{profile.xp} / {nextXp} XP до следующего уровня</small></div><div className="profile-rank"><Crown/><span>Звание сайта</span><strong>Разведчик</strong><small>Открой 3 материала для нового звания</small></div></section>
+    {edit&&<section className="profile-edit"><label>Никнейм<input value={profile.nickname} maxLength={24} onChange={e=>setProfile({...profile,nickname:e.target.value})}/></label><label>Звание в игре<select value={profile.gameRank} onChange={e=>setProfile({...profile,gameRank:e.target.value})}>{ranks.map(x=><option key={x}>{x}</option>)}</select></label><div><b>Аватар</b><div className="choice-row">{avatars.map(x=><button key={x} className={profile.avatar===x?"chosen":""} onClick={()=>setProfile({...profile,avatar:x})}>{x}</button>)}</div></div><div><b>Рамка</b><div className="choice-row">{frames.map(x=><button key={x} className={`frame-choice ${x} ${profile.frame===x?"chosen":""}`} onClick={()=>setProfile({...profile,frame:x})}/>)}</div></div><button className="save-profile" disabled={saving} onClick={save}><Save size={17}/>{saving?"Сохраняю…":"Сохранить"}</button></section>}
+    {notice&&<p className="profile-notice">{notice}</p>}
+    <section className="profile-grid"><article className="progress-panel"><div className="panel-title"><span><Sparkles/> Прогресс</span><small>Как получать XP?</small></div><div className="progress-actions"><div><BookOpen/><strong>Статьи</strong><b>{profile.articlesRead}</b><small>+20 XP за прочтение</small></div><div><Play/><strong>Ролики</strong><b>{profile.videosWatched}</b><small>+35 XP за просмотр</small></div><div><Flame/><strong>Серия</strong><b>0 дней</b><small>Скоро добавим</small></div></div></article><article className="achievements-panel"><div className="panel-title"><span><Award/> Достижения</span><small>0 / 6</small></div><div className="achievement-list"><p><LockKeyhole/> Первый материал <span>Прочитать статью</span></p><p><LockKeyhole/> Знаток оружия <span>5 материалов об оружии</span></p><p><LockKeyhole/> Видеогайд <span>Посмотреть ролик</span></p></div></article></section>
+    <section className="future-panel"><div><p className="eyebrow">Скоро</p><h2>Коллекция и онлайн-бои</h2><p>Карты, колоды, редкие рамки и рейтинг игроков появятся здесь. Завтра вместе настроим правила и награды.</p></div><Trophy size={54}/></section>
+  </main></div>;
+}
