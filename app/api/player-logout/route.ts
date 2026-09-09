@@ -1,0 +1,1 @@
+import { cookies } from "next/headers"; import { removePlayerSession } from "@/db/player-auth"; export async function POST(){const c=await cookies();await removePlayerSession(c.get("fp_player")?.value);return new Response(null,{status:204,headers:{"set-cookie":"fp_player=; Path=/; HttpOnly; SameSite=Lax; Secure; Max-Age=0"}})}
