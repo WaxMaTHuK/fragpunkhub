@@ -1,0 +1,3 @@
+import { loginPlayer, registerPlayer } from "@/db/player-auth";
+const cookie=(token:string)=>`fp_player=${token}; Path=/; HttpOnly; SameSite=Lax; Secure; Max-Age=2592000`;
+export async function POST(request:Request){try{const body=await request.json();const result=body.mode==="register"?await registerPlayer(String(body.email??""),String(body.password??"")):await loginPlayer(String(body.email??""),String(body.password??""));return new Response(JSON.stringify({ok:true}),{headers:{"content-type":"application/json","set-cookie":cookie(result.token)}})}catch(e){return Response.json({error:e instanceof Error?e.message:"Ошибка входа"},{status:400})}}
