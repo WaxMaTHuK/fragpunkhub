@@ -16,3 +16,17 @@ export const posts = sqliteTable("posts", {
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
   updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
+
+export const profiles = sqliteTable("profiles", {
+  userId: text("user_id").primaryKey(),
+  nickname: text("nickname").notNull().default("Лансер"),
+  avatar: text("avatar").notNull().default("⚡"),
+  frame: text("frame").notNull().default("acid"),
+  gameRank: text("game_rank").notNull().default("Новичок"),
+  level: integer("level").notNull().default(1),
+  xp: integer("xp").notNull().default(0),
+  articlesRead: integer("articles_read").notNull().default(0),
+  videosWatched: integer("videos_watched").notNull().default(0),
+  createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+});
