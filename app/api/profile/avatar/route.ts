@@ -5,30 +5,48 @@ import { getOrCreateProfile, updateAvatar } from "@/db/profile";
 
 const allowed = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
 
+async function ensureAvatarTable() {
+  await env.DB.prepare(`CREATE TABLE IF NOT EXISTS profile_avatars (
+    user_id TEXT PRIMARY KEY,
+    content_type TEXT NOT NULL,
+    bytes BLOB NOT NULL,
+    updated_at TEXT NOT NULL
+  )`).run();
+}
+
 export async function POST(request: Request) {
   const cookieStore = await cookies();
   const user = await getPlayerBySession(cookieStore.get("fp_player")?.value);
   if (!user) return Response.json({ error: "Нужно войти в кабинет." }, { status: 401 });
-  if (!env.BUCKET) return Response.json({ error: "Хранилище аватаров ещё подключается. Попробуйте через минуту." }, { status: 503 });
+
   const form = await request.formData().catch(() => null);
   const file = form?.get("avatar");
   if (!(file instanceof File) || !allowed.has(file.type)) return Response.json({ error: "Нужен файл PNG, JPG, WEBP или GIF." }, { status: 400 });
   if (file.size > 2 * 1024 * 1024) return Response.json({ error: "Файл должен быть не больше 2 МБ." }, { status: 400 });
-  const extension = file.type === "image/png" ? "png" : file.type === "image/jpeg" ? "jpg" : file.type === "image/webp" ? "webp" : "gif";
-  const key = "avatars/" + user.userId + "-" + crypto.randomUUID() + "." + extension;
-  await env.BUCKET.put(key, await file.arrayBuffer(), { httpMetadata: { contentType: file.type, cacheControl: "public, max-age=31536000, immutable" } });
-  await getOrCreateProfile(user.userId, "Лансер");
-  const avatar = "/api/profile/avatar?key=" + encodeURIComponent(key);
-  await updateAvatar(user.userId, avatar);
-  return Response.json({ avatar });
+
+  try {
+    await ensureAvatarTable();
+    await env.DB.prepare(
+      "INSERT INTO profile_avatars (user_id, content_type, bytes, updated_at) VALUES (?, ?, ?, ?) ON CONFLICT(user_id) DO UPDATE SET content_type=excluded.content_type, bytes=excluded.bytes, updated_at=excluded.updated_at"
+    ).bind(user.userId, file.type, await file.arrayBuffer(), new Date().toISOString()).run();
+    await getOrCreateProfile(user.userId, "Лансер");
+    const avatar = "/api/profile/avatar";
+    await updateAvatar(user.userId, avatar);
+    return Response.json({ avatar });
+  } catch {
+    return Response.json({ error: "Не получилось сохранить аватар. Попробуйте ещё раз." }, { status: 500 });
+  }
 }
 
-export async function GET(request: Request) {
+export async function GET() {
   const user = await getPlayerBySession((await cookies()).get("fp_player")?.value);
-  if (!user || !env.BUCKET) return new Response(null, { status: 404 });
-  const key = new URL(request.url).searchParams.get("key") || "";
-  if (!key.startsWith("avatars/" + user.userId + "-")) return new Response(null, { status: 403 });
-  const object = await env.BUCKET.get(key);
-  if (!object) return new Response(null, { status: 404 });
-  return new Response(object.body, { headers: { "content-type": object.httpMetadata?.contentType || "image/jpeg", "cache-control": "private, max-age=86400" } });
+  if (!user) return new Response(null, { status: 401 });
+  try {
+    await ensureAvatarTable();
+    const row = await env.DB.prepare("SELECT content_type, bytes FROM profile_avatars WHERE user_id = ?").bind(user.userId).first<{ content_type: string; bytes: ArrayBuffer }>();
+    if (!row?.bytes) return new Response(null, { status: 404 });
+    return new Response(row.bytes, { headers: { "content-type": row.content_type, "cache-control": "private, max-age=3600" } });
+  } catch {
+    return new Response(null, { status: 500 });
+  }
 }
