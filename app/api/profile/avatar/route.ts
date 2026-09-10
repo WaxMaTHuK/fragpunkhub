@@ -4,6 +4,7 @@ import { getPlayerBySession } from "@/db/player-auth";
 import { getOrCreateProfile, updateAvatar } from "@/db/profile";
 
 const allowed = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
+
 export async function POST(request: Request) {
   const cookieStore = await cookies();
   const user = await getPlayerBySession(cookieStore.get("fp_player")?.value);
@@ -20,4 +21,14 @@ export async function POST(request: Request) {
   const avatar = "/api/profile/avatar?key=" + encodeURIComponent(key);
   await updateAvatar(user.userId, avatar);
   return Response.json({ avatar });
+}
+
+export async function GET(request: Request) {
+  const user = await getPlayerBySession((await cookies()).get("fp_player")?.value);
+  if (!user || !env.BUCKET) return new Response(null, { status: 404 });
+  const key = new URL(request.url).searchParams.get("key") || "";
+  if (!key.startsWith("avatars/" + user.userId + "-")) return new Response(null, { status: 403 });
+  const object = await env.BUCKET.get(key);
+  if (!object) return new Response(null, { status: 404 });
+  return new Response(object.body, { headers: { "content-type": object.httpMetadata?.contentType || "image/jpeg", "cache-control": "private, max-age=86400" } });
 }
