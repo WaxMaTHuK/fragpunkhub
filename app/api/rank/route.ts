@@ -14,5 +14,5 @@ export async function GET(request: Request) {
   const encoded = icons[rank];
   if (!encoded) return new Response(null, { status: 404 });
   const binary = Uint8Array.from(atob(encoded), (char) => char.charCodeAt(0));
-  return new Response(binary, { headers: { "content-type": "image/png", "cache-control": "public, max-age=31536000, immutable" } });
+  return new Response(binary, { headers: { "content-type": "image/png", "cache-control": "no-store" } });
 }
