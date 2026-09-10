@@ -8,14 +8,14 @@ type Frame = { id: string; label: string; color: string };
 
 const avatars = ["⚡", "🎯", "🦊", "👾", "🛡️", "🔥"];
 const ranks = [
-  { name: "Бронза", image: "/ranks/bronze.png", tone: "bronze" },
-  { name: "Серебро", image: "/ranks/silver.png", tone: "silver" },
-  { name: "Золото", image: "/ranks/gold.png", tone: "gold" },
-  { name: "Платина", image: "/ranks/platinum.png", tone: "platinum" },
-  { name: "Алмаз", image: "/ranks/diamond.png", tone: "diamond" },
-  { name: "Мастер", image: "/ranks/master.png", tone: "master" },
-  { name: "Ас", image: "/ranks/ace.png", tone: "ace" },
-  { name: "Панк-мастер", image: "/ranks/punk-master.png", tone: "punkmaster" },
+  { name: "Бронза", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/bronze.png", tone: "bronze" },
+  { name: "Серебро", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/silver.png", tone: "silver" },
+  { name: "Золото", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/gold.png", tone: "gold" },
+  { name: "Платина", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/platinum.png", tone: "platinum" },
+  { name: "Алмаз", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/diamond.png", tone: "diamond" },
+  { name: "Мастер", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/master.png", tone: "master" },
+  { name: "Ас", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/ace.png", tone: "ace" },
+  { name: "Панк-мастер", image: "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/ranks/punk-master.png", tone: "punkmaster" },
 ] as const;
 const frames: Frame[] = [
   {id:"acid",label:"Лайм",color:"#dcff3f"},{id:"violet",label:"Фиолетовый",color:"#9c56ff"},
