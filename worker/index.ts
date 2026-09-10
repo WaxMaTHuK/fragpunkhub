@@ -38,7 +38,11 @@ const worker = {
     const url = new URL(request.url);
 
     const adminOrAssetRequest = url.pathname.startsWith("/admin") || url.pathname.startsWith("/api/admin") || url.pathname.startsWith("/_vinext") || url.pathname === "/favicon.svg";
-    if (env.MAINTENANCE_MODE === "on" && !adminOrAssetRequest) return maintenancePage();
+    const previewToken = "5e7533561cf516aa3c2dba0ae7d47ee8c817c963";
+    const previewCookie = request.headers.get("Cookie")?.includes(`fragpunk_preview=${previewToken}`) ?? false;
+    const enablePreview = url.searchParams.get("preview") === previewToken;
+    const previewAllowed = previewCookie || enablePreview;
+    if (env.MAINTENANCE_MODE === "on" && !adminOrAssetRequest && !previewAllowed) return maintenancePage();
 
 
     if (url.pathname === "/_vinext/image") {
@@ -52,7 +56,11 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    if (enablePreview) {
+      response.headers.append("Set-Cookie", `fragpunk_preview=${previewToken}; Max-Age=7200; Path=/; HttpOnly; Secure; SameSite=Lax`);
+    }
+    return response;
   },
 };
 
