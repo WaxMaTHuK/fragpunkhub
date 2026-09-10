@@ -37,7 +37,7 @@ const frames: Frame[] = [
   {id:"nebula",label:"Туманность",color:"linear-gradient(135deg,#4e4eff,#c359ff,#ff4aa2)"},
 ];
 
-function isImage(value: string) { return value.startsWith("/api/avatar") || value.startsWith("https://"); }
+function isImage(value: string) { return value.startsWith("/api/profile/avatar") || value.startsWith("https://"); }
 function frameStyle(id: string) { return frames.find((x) => x.id === id)?.color ?? "#dcff3f"; }
 
 export function ProfileClient({ initialProfile }: { initialProfile: Profile }) {
