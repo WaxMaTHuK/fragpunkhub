@@ -13,14 +13,14 @@ export async function getOrCreateProfile(userId: string, suggestedName: string) 
 export async function updateProfile(userId: string, input: { nickname: string; avatar: string; frame: string; gameRank: string }) {
   const db = getDb();
   const nickname = input.nickname.trim().slice(0, 24) || "Лансер";
-  const [updated] = await db.update(profiles).set({ nickname, avatar: input.avatar.slice(0, 180), frame: input.frame.slice(0, 40), gameRank: input.gameRank.slice(0, 40), updatedAt: new Date().toISOString() }).where(eq(profiles.userId, userId)).returning();
+  const [updated] = await db.update(profiles).set({ nickname, avatar: input.avatar.slice(0, 500000), frame: input.frame.slice(0, 40), gameRank: input.gameRank.slice(0, 40), updatedAt: new Date().toISOString() }).where(eq(profiles.userId, userId)).returning();
   if (!updated) throw new Error("Профиль не найден");
   return updated;
 }
 
 export async function updateAvatar(userId: string, avatar: string) {
   const db = getDb();
-  const [updated] = await db.update(profiles).set({ avatar: avatar.slice(0, 180), updatedAt: new Date().toISOString() }).where(eq(profiles.userId, userId)).returning();
+  const [updated] = await db.update(profiles).set({ avatar: avatar.slice(0, 500000), updatedAt: new Date().toISOString() }).where(eq(profiles.userId, userId)).returning();
   if (!updated) throw new Error("Профиль не найден");
   return updated;
 }
