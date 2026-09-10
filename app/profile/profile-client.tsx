@@ -37,7 +37,20 @@ const frames: Frame[] = [
   {id:"nebula",label:"Туманность",color:"linear-gradient(135deg,#4e4eff,#c359ff,#ff4aa2)"},
 ];
 
-function isImage(value: string) { return value.startsWith("/api/profile/avatar") || value.startsWith("https://"); }
+function isImage(value: string) { return value.startsWith("/api/profile/avatar") || value.startsWith("https://") || value.startsWith("data:image/"); }
+async function makeCompactAvatar(file: File) {
+  const bitmap = await createImageBitmap(file);
+  const maxSide = 512;
+  const scale = Math.min(1, maxSide / Math.max(bitmap.width, bitmap.height));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.max(1, Math.round(bitmap.width * scale));
+  canvas.height = Math.max(1, Math.round(bitmap.height * scale));
+  const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("canvas unavailable");
+  ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+  bitmap.close();
+  return canvas.toDataURL("image/jpeg", 0.84);
+}
 function frameStyle(id: string) { return frames.find((x) => x.id === id)?.color ?? "#dcff3f"; }
 
 export function ProfileClient({ initialProfile }: { initialProfile: Profile }) {
@@ -60,8 +73,13 @@ export function ProfileClient({ initialProfile }: { initialProfile: Profile }) {
     const form=new FormData(); form.set("avatar",file);
     const r=await fetch("/api/profile/avatar",{method:"POST",body:form});
     const data=await r.json().catch(()=>null); setSaving(false);
-    if(r.ok && data?.avatar) { setProfile((p)=>({...p,avatar:data.avatar})); setNotice("Аватар загружен. Нажмите «Сохранить»."); }
-    else setNotice(data?.error || "Не удалось загрузить аватар. Попробуйте ещё раз.");
+    if(r.ok && data?.avatar) { setProfile((p)=>({...p,avatar:data.avatar})); setNotice("Аватар загружен. Нажмите «Сохранить»."); return; }
+    try {
+      const avatar = await makeCompactAvatar(file);
+      const fallback = await fetch("/api/profile",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({...profile,avatar})});
+      if (fallback.ok) { setProfile((p)=>({...p,avatar})); setNotice("Аватар загружен."); return; }
+    } catch {}
+    setNotice(data?.error || "Не удалось загрузить аватар. Попробуйте ещё раз.");
   }
   return <div className="site-shell profile-shell"><header className="site-header"><div className="wrap header-row"><a className="brand" href="/" aria-label="На главную"><span className="brand-mark"/><span className="brand-text"><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a><nav className="main-nav"><a href="/">Материалы</a><a className="profile-link active" href="/profile"><UserRound size={17}/> Кабинет</a><a className="admin-link" href="/admin">Редактор</a></nav></div></header><main className="wrap profile-main">
     <div className="profile-topline"><a href="/">← Все материалы</a><span>Игрок сайта</span></div>
