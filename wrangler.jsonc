@@ -15,6 +15,7 @@
       "database_id": "21128854-f888-4e10-8469-4f4207e2823b"
     }
   ],
+  "vars": { "MAINTENANCE_MODE": "on" },
   "observability": {
     "enabled": true
   }
