@@ -8,14 +8,14 @@ type Frame = { id: string; label: string; color: string };
 
 const avatars = ["⚡", "🎯", "🦊", "👾", "🛡️", "🔥"];
 const ranks = [
-  { name: "Бронза", image: "/api/rank?rank=bronze", tone: "bronze" },
-  { name: "Серебро", image: "/api/rank?rank=silver", tone: "silver" },
-  { name: "Золото", image: "/api/rank?rank=gold", tone: "gold" },
-  { name: "Платина", image: "/api/rank?rank=platinum", tone: "platinum" },
-  { name: "Алмаз", image: "/api/rank?rank=diamond", tone: "diamond" },
-  { name: "Мастер", image: "/api/rank?rank=master", tone: "master" },
-  { name: "Ас", image: "/api/rank?rank=ace", tone: "ace" },
-  { name: "Панк-мастер", image: "/api/rank?rank=punk-master", tone: "punkmaster" },
+  { name: "Бронза", image: "/api/rank?v=3&rank=bronze", tone: "bronze" },
+  { name: "Серебро", image: "/api/rank?v=3&rank=silver", tone: "silver" },
+  { name: "Золото", image: "/api/rank?v=3&rank=gold", tone: "gold" },
+  { name: "Платина", image: "/api/rank?v=3&rank=platinum", tone: "platinum" },
+  { name: "Алмаз", image: "/api/rank?v=3&rank=diamond", tone: "diamond" },
+  { name: "Мастер", image: "/api/rank?v=3&rank=master", tone: "master" },
+  { name: "Ас", image: "/api/rank?v=3&rank=ace", tone: "ace" },
+  { name: "Панк-мастер", image: "/api/rank?v=3&rank=punk-master", tone: "punkmaster" },
 ] as const;
 const frames: Frame[] = [
   {id:"acid",label:"Лайм",color:"#dcff3f"},{id:"violet",label:"Фиолетовый",color:"#9c56ff"},
