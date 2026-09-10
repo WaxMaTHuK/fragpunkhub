@@ -18,6 +18,7 @@ export type WeaponFields = {
   kind: WeaponKind;
   category: WeaponCategory;
   fireMode: WeaponFireMode;
+  damageRanges: [string, string, string];
   damageHead: [string, string, string];
   damageBody: [string, string, string];
   damageLimbs: [string, string, string];
@@ -48,7 +49,7 @@ const youtubePattern = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i;
 export const DEFAULT_WEAPON_FIELDS: WeaponFields = {
   image: "", description: "", video: "", lancers: [], range: "medium",
   style: "balanced", control: "easy", role: "universal", kind: "firearm", category: "pistols", fireMode: "automatic",
-  damageHead: ["", "", ""], damageBody: ["", "", ""], damageLimbs: ["", "", ""],
+  damageRanges: ["0–10 м", "10–25 м", "25–60 м"], damageHead: ["", "", ""], damageBody: ["", "", ""], damageLimbs: ["", "", ""],
   magazine: "", reserveAmmo: "", equipTime: "", crouchSpeed: "", walkSpeed: "", runSpeed: "", fireRate: "", zoom: "", adsTime: "",
   meleeLightDamage: "", meleeLightBackstab: "", meleeHeavyDamage: "", meleeHeavyBackstab: "", meleeChargeDamage: "", meleeChargeBackstab: "", dashDistance: "", chargeTime: "", attackArea: "",
 };
@@ -69,6 +70,7 @@ export function parseWeaponContent(content: string): WeaponFields {
     lancers: Array.isArray(meta.lancers) ? meta.lancers : images.slice(1),
     video: meta.video || plainLines.find((line) => youtubePattern.test(line)) || "",
     description: meta.description || plainLines.filter((line) => !imagePattern.test(line) && !youtubePattern.test(line)).join("\n"),
+    damageRanges: Array.isArray(meta.damageRanges) ? meta.damageRanges : ["0–10 м", "10–25 м", "25–60 м"],
     damageHead: Array.isArray(meta.damageHead) ? meta.damageHead : ["", "", ""],
     damageBody: Array.isArray(meta.damageBody) ? meta.damageBody : ["", "", ""],
     damageLimbs: Array.isArray(meta.damageLimbs) ? meta.damageLimbs : ["", "", ""],
