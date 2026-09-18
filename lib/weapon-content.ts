@@ -2,7 +2,7 @@ export type WeaponRange = "close" | "medium" | "long";
 export type WeaponStyle = "aggressive" | "balanced" | "careful";
 export type WeaponControl = "easy" | "medium" | "hard";
 export type WeaponRole = "entry" | "support" | "universal";
-export type WeaponFireMode = "automatic" | "burst" | "single" | "bolt" | "pump";
+export type WeaponFireMode = "automatic" | "semi-automatic" | "burst" | "single" | "bolt" | "pump";
 export type WeaponKind = "firearm" | "melee";
 export type WeaponCategory = "shotguns" | "smgs" | "assault-rifles" | "sniper-rifles" | "marksman-rifles" | "lmgs" | "pistols" | "melee";
 
@@ -77,7 +77,7 @@ export function parseWeaponContent(content: string): WeaponFields {
   };
 }
 
-export const WEAPON_FIRE_MODE_LABELS: Record<WeaponFireMode, string> = { automatic: "Автоматический", burst: "Очередями", single: "Одиночный", bolt: "Болтовый затвор", pump: "Помповый" };
+export const WEAPON_FIRE_MODE_LABELS: Record<WeaponFireMode, string> = { automatic: "Автоматический", "semi-automatic": "Полуавтоматический", burst: "Очередями", single: "Одиночный", bolt: "Болтовый затвор", pump: "Помповый" };
 
 export function makeWeaponContent(fields: WeaponFields): string {
   return `${META_PREFIX}${JSON.stringify(fields)}`;
