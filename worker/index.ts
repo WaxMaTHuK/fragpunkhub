@@ -42,7 +42,8 @@ const worker = {
     const previewCookie = request.headers.get("Cookie")?.includes(`fragpunk_preview=${previewToken}`) ?? false;
     const enablePreview = url.searchParams.get("preview") === previewToken;
     const previewAllowed = previewCookie || enablePreview;
-    if (env.MAINTENANCE_MODE === "on" && !adminOrAssetRequest && !previewAllowed) return maintenancePage();
+    const maintenanceEnabled = true;
+    if (maintenanceEnabled && !adminOrAssetRequest && !previewAllowed) return maintenancePage();
 
 
     if (url.pathname === "/_vinext/image") {
