@@ -2,6 +2,7 @@ import { z } from "zod";
 import { deletePost, savePost } from "@/db/content";
 import { POST_TYPES } from "@/lib/hub-content";
 import { isAdminRequest } from "@/app/admin-auth";
+import { parseLancerContent, validModelUrl } from "@/lib/lancer-models";
 
 const postSchema = z.object({
   id: z.string().max(100).optional().or(z.literal("")), type: z.enum(POST_TYPES), title: z.string().trim().min(2).max(140),
@@ -16,6 +17,7 @@ export async function POST(request: Request) {
   try {
     const parsed = postSchema.safeParse(await request.json());
     if (!parsed.success) return Response.json({ error: "Проверь заполненные поля" }, { status: 400 });
+    if (parsed.data.type === "lancer" && parseLancerContent(parsed.data.content).skins.some((skin) => !skin.name.trim() || !validModelUrl(skin.model))) return Response.json({ error: "Проверь названия обликов и ссылки на GLB/GLTF." }, { status: 400 });
     const post = await savePost({ ...parsed.data, id: parsed.data.id || undefined }, "site-owner");
     return Response.json({ post });
   } catch (error) { return Response.json({ error: error instanceof Error ? error.message : "Не удалось сохранить" }, { status: 500 }); }

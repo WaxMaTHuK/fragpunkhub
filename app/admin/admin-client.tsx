@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
 import { makeWeaponContent, parseWeaponContent, type WeaponFields } from "@/lib/weapon-content";
+import { makeLancerContent, parseLancerContent, validModelUrl, type LancerContent } from "@/lib/lancer-models";
 
 type Draft = Omit<HubPost, "slug" | "updatedAt"> & { id: string };
 function makeDraft(post?: HubPost): Draft { return post ? { id: post.id, type: post.type, title: post.title, summary: post.summary, content: post.content, readTime: post.readTime, accent: post.accent, published: post.published, sortOrder: post.sortOrder } : { id: "", type: "lancer", title: "", summary: "", content: "", readTime: "5 мин", accent: "purple", published: true, sortOrder: 100 }; }
@@ -32,6 +33,7 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
   function update<K extends keyof Draft>(key: K, value: Draft[K]) { setDraft((current) => ({ ...current, [key]: value })); setMessage(""); }
   function updateShard(changes: Partial<ShardFields>) { const fields = { ...parseShardContent(draft.content), ...changes }; update("content", makeShardContent(fields)); }
   function updateWeapon(changes: Partial<WeaponFields>) { const fields = { ...parseWeaponContent(draft.content), ...changes }; update("content", makeWeaponContent(fields)); }
+  function updateLancer(changes: Partial<LancerContent>) { const fields = { ...parseLancerContent(draft.content), ...changes }; update("content", makeLancerContent(fields)); }
   function addImageLink() {
     const url = window.prompt("Вставь прямую ссылку на картинку из GitHub (raw.githubusercontent.com):");
     if (!url?.trim()) return;
@@ -53,6 +55,7 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
   }
   async function save() {
     if (!draft.title.trim()) { setMessage("Добавь название материала."); return; }
+    if (draft.type === "lancer" && parseLancerContent(draft.content).skins.some((skin) => !skin.name.trim() || !validModelUrl(skin.model))) { setMessage("У каждого облика должны быть название и прямая HTTPS ссылка на GLB/GLTF (или файл из /models/)."); return; }
     setSaving(true); setMessage("");
     try {
       const response = await fetch("/api/admin/posts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(draft) });
@@ -82,13 +85,25 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
           <div className="field"><Label>Раздел</Label><Select value={draft.type} onValueChange={(value) => update("type", value as PostType)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Object.entries(TYPE_LABELS).map(([value, label]) => <SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div>
           <div className="field"><Label htmlFor="readTime">Время чтения</Label><Input id="readTime" value={draft.readTime} onChange={(e) => update("readTime", e.target.value)} /></div>
           <div className="field field-wide"><Label htmlFor="summary">Короткое описание</Label><Input id="summary" value={draft.summary} onChange={(e) => update("summary", e.target.value)} placeholder="Одна понятная строка для карточки" /></div>
-          {draft.type === "shard" ? <ShardCardEditor fields={parseShardContent(draft.content)} onChange={updateShard} /> : draft.type === "weapon" ? <WeaponEditor fields={parseWeaponContent(draft.content)} onChange={updateWeapon} /> : <div className="field field-wide"><div className="field-label-row"><Label htmlFor="content">Текст материала</Label><Button type="button" variant="outline" size="sm" onClick={addImageLink}><Link /> Добавить картинку</Button></div><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши гайд, новость или описание…" rows={12} /><p className="field-help">Загрузи картинку в GitHub, затем вставь её прямую ссылку. Её можно перенести на нужное место в тексте.</p></div>}
+          {draft.type === "shard" ? <ShardCardEditor fields={parseShardContent(draft.content)} onChange={updateShard} /> : draft.type === "weapon" ? <WeaponEditor fields={parseWeaponContent(draft.content)} onChange={updateWeapon} /> : draft.type === "lancer" ? <LancerEditor fields={parseLancerContent(draft.content)} onChange={updateLancer} /> : <div className="field field-wide"><div className="field-label-row"><Label htmlFor="content">Текст материала</Label><Button type="button" variant="outline" size="sm" onClick={addImageLink}><Link /> Добавить картинку</Button></div><Textarea id="content" value={draft.content} onChange={(e) => update("content", e.target.value)} placeholder="Напиши гайд, новость или описание…" rows={12} /><p className="field-help">Загрузи картинку в GitHub, затем вставь её прямую ссылку. Её можно перенести на нужное место в тексте.</p></div>}
           <div className="field"><Label>Цвет карточки</Label><Select value={draft.accent} onValueChange={(value) => update("accent", value)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="purple">Фиолетовый</SelectItem><SelectItem value="pink">Розовый</SelectItem><SelectItem value="acid">Кислотный</SelectItem><SelectItem value="cyan">Голубой</SelectItem><SelectItem value="red">Красный</SelectItem></SelectContent></Select></div>
           <div className="field"><Label htmlFor="order">Порядок</Label><Input id="order" type="number" value={draft.sortOrder} onChange={(e) => update("sortOrder", Number(e.target.value))} /></div>
           <div className="publish-row field-wide"><div><Label htmlFor="published">Показывать посетителям</Label><p>Отключи, чтобы сохранить материал как черновик.</p></div><Switch id="published" checked={draft.published} onCheckedChange={(checked) => update("published", checked)} /></div>
         </div>{message && <div className={message.startsWith("Опубликовано") ? "save-message success" : "save-message"}>{message.startsWith("Опубликовано") && <Check size={17} />}{message}</div>}
       </section></div>
   </main>;
+}
+
+function LancerEditor({ fields, onChange }: { fields: LancerContent; onChange: (changes: Partial<LancerContent>) => void }) {
+  function changeSkin(index: number, changes: Partial<LancerContent["skins"][number]>) {
+    onChange({ skins: fields.skins.map((skin, i) => i === index ? { ...skin, ...changes } : skin) });
+  }
+  return <div className="field-wide shard-editor lancer-model-editor"><div className="shard-editor-title"><div><p className="eyebrow">Лансер</p><h2>Описание и 3D облики</h2></div><span>Модели появятся в карточке после сохранения</span></div><div className="shard-editor-grid">
+    <div className="field field-wide"><Label htmlFor="lancer-description">Описание</Label><Textarea id="lancer-description" value={fields.description} onChange={(event) => onChange({ description: event.target.value })} rows={12} /></div>
+    <div className="field field-wide"><div className="field-label-row"><div><Label>Облики в игре</Label><p className="field-help">Для каждого облика нужен настоящий 3D файл GLB или GLTF. Используй свои файлы в /models/ или прямые HTTPS ссылки с доступом для браузера.</p></div><Button type="button" variant="outline" size="sm" onClick={() => onChange({ skins: [...fields.skins, { name: "Новый облик", model: "" }] })}><Plus /> Добавить облик</Button></div>
+      <div className="lancer-model-list">{fields.skins.map((skin, index) => <div className="lancer-model-row" key={index}><Input aria-label={`Название облика ${index + 1}`} value={skin.name} onChange={(event) => changeSkin(index, { name: event.target.value })} placeholder="Название облика" /><Input aria-label={`3D файл облика ${index + 1}`} value={skin.model} onChange={(event) => changeSkin(index, { model: event.target.value })} placeholder="/models/broker/default.glb" /><Button type="button" variant="ghost" size="icon" onClick={() => onChange({ skins: fields.skins.filter((_, i) => i !== index) })} aria-label={`Удалить облик ${skin.name}`}><Trash2 /></Button></div>)}</div>
+    </div>
+  </div></div>;
 }
 
 function ShardCardEditor({ fields, onChange }: { fields: ShardFields; onChange: (changes: Partial<ShardFields>) => void }) {
