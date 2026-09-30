@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowLeft, Check, FilePlus2, Image, Link, Loader2, Plus, Save, ShieldCheck, Trash2, Video } from "lucide-react";
+import { ArrowLeft, Check, DatabaseZap, FilePlus2, Image, Link, Loader2, Plus, Save, ShieldCheck, Trash2, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -26,7 +26,7 @@ function parseShardContent(content: string): ShardFields {
 function makeShardContent(fields: ShardFields) { return [fields.image, fields.description, ...fields.lancers, fields.video].map((line) => line.trim()).filter(Boolean).join("\n\n"); }
 
 export function AdminClient({ initialPosts, userName, signOutPath }: { initialPosts: HubPost[]; userName: string; signOutPath: string }) {
-  const [posts, setPosts] = useState(initialPosts); const [draft, setDraft] = useState<Draft>(() => makeDraft(initialPosts[0])); const [saving, setSaving] = useState(false); const [deleting, setDeleting] = useState(false); const [message, setMessage] = useState("");
+  const [posts, setPosts] = useState(initialPosts); const [seeding, setSeeding] = useState(false); const [draft, setDraft] = useState<Draft>(() => makeDraft(initialPosts[0])); const [saving, setSaving] = useState(false); const [deleting, setDeleting] = useState(false); const [message, setMessage] = useState("");
   const selected = useMemo(() => posts.find((post) => post.id === draft.id), [posts, draft.id]);
   function choose(post: HubPost) { setDraft(makeDraft(post)); setMessage(""); }
   function update<K extends keyof Draft>(key: K, value: Draft[K]) { setDraft((current) => ({ ...current, [key]: value })); setMessage(""); }
@@ -38,6 +38,16 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
     if (!/^https:\/\/raw\.githubusercontent\.com\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i.test(url.trim())) { setMessage("Нужна прямая ссылка raw.githubusercontent.com на JPG, PNG или WEBP."); return; }
     update("content", `${draft.content.trim()}${draft.content.trim() ? "\n\n" : ""}${url.trim()}\n`);
     setMessage("Ссылка на картинку добавлена. Сохрани материал, чтобы опубликовать её.");
+  }
+  async function seedCatalog() {
+    setSeeding(true); setMessage("");
+    try {
+      const response = await fetch("/api/admin/seed-catalog", { method: "POST" });
+      if (response.status === 401) { window.location.assign("/admin/login"); return; }
+      const payload = await response.json() as { created?: number; skipped?: number; error?: string };
+      if (!response.ok || typeof payload.created !== "number") throw new Error(payload.error || "Не удалось заполнить каталог");
+      window.location.reload();
+    } catch (error) { setMessage(error instanceof Error ? error.message : "Не удалось заполнить каталог"); } finally { setSeeding(false); }
   }
   async function save() {
     if (!draft.title.trim()) { setMessage("Добавь название материала."); return; }
@@ -64,7 +74,7 @@ export function AdminClient({ initialPosts, userName, signOutPath }: { initialPo
   }
   return <main className="admin-page">
     <header className="admin-topbar"><div><a href="/"><ArrowLeft size={17} /> На сайт</a><span className="admin-badge"><ShieldCheck size={16} /> Редактор</span></div><div><span>{userName}</span><a href={signOutPath} target="_top">Выйти</a></div></header>
-    <div className="admin-layout"><aside className="admin-list"><div className="admin-list-head"><div><p>Материалы</p><span>{posts.length} записей</span></div><Button type="button" size="icon" onClick={() => { setDraft(makeDraft()); setMessage(""); }} aria-label="Новый материал"><FilePlus2 /></Button></div><div className="admin-items">{posts.map((post) => <Button key={post.id} type="button" variant="ghost" className={draft.id === post.id ? "admin-item selected" : "admin-item"} onClick={() => choose(post)}><span className={`mini-accent color-${post.accent}`} /><span><strong>{post.title}</strong><small>{TYPE_LABELS[post.type]} · {post.published ? "На сайте" : "Черновик"}</small></span></Button>)}</div></aside>
+    <div className="admin-layout"><aside className="admin-list"><div className="admin-list-head"><div><p>Материалы</p><span>{posts.length} записей</span></div><div className="flex gap-2"><Button type="button" variant="outline" size="sm" onClick={seedCatalog} disabled={seeding}>{seeding ? <Loader2 className="spin" /> : <DatabaseZap />} Заполнить каталог</Button><Button type="button" size="icon" onClick={() => { setDraft(makeDraft()); setMessage(""); }} aria-label="Новый материал"><FilePlus2 /></Button></div></div><div className="admin-items">{posts.map((post) => <Button key={post.id} type="button" variant="ghost" className={draft.id === post.id ? "admin-item selected" : "admin-item"} onClick={() => choose(post)}><span className={`mini-accent color-${post.accent}`} /><span><strong>{post.title}</strong><small>{TYPE_LABELS[post.type]} · {post.published ? "На сайте" : "Черновик"}</small></span></Button>)}</div></aside>
       <section className="editor-panel"><div className="editor-heading"><div><p className="eyebrow">{selected ? "Редактирование" : "Новый материал"}</p><h1>{selected?.title || "Создай материал"}</h1></div><div className="editor-actions">{selected && <AlertDialog><AlertDialogTrigger asChild><Button type="button" variant="outline" className="delete-material"><Trash2 /> Удалить</Button></AlertDialogTrigger><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>Удалить «{selected.title}»?</AlertDialogTitle><AlertDialogDescription>Материал исчезнет с сайта. Отменить это действие после удаления нельзя.</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel>Отмена</AlertDialogCancel><AlertDialogAction variant="destructive" onClick={remove} disabled={deleting}>{deleting ? <Loader2 className="spin" /> : <Trash2 />} Удалить материал</AlertDialogAction></AlertDialogFooter></AlertDialogContent></AlertDialog>}<Button type="button" onClick={save} disabled={saving}>{saving ? <Loader2 className="spin" /> : <Save />} Сохранить и опубликовать</Button></div></div>
         <div className="editor-grid"><div className="field field-wide"><Label htmlFor="title">Название</Label><Input id="title" value={draft.title} onChange={(e) => update("title", e.target.value)} placeholder="Например: Лучший билд Короны" /></div>
           <div className="field"><Label>Раздел</Label><Select value={draft.type} onValueChange={(value) => update("type", value as PostType)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Object.entries(TYPE_LABELS).map(([value, label]) => <SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div>
