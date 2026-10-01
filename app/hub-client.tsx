@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { TYPE_LABELS, type HubPost, type PostType } from "@/lib/hub-content";
 import { parseWeaponContent } from "@/lib/weapon-content";
+import { resolveWeaponImage } from "@/lib/weapon-images";
 
 const filters: { value: "all" | PostType; label: string }[] = [
   { value: "all", label: "Все" }, { value: "lancer", label: "Лансеры" }, { value: "weapon", label: "Оружие" },
@@ -23,8 +24,7 @@ function weaponCategory(post: HubPost) { const weapon = parseWeaponContent(post.
 
 function weaponPreview(post: HubPost) {
   if (post.type !== "weapon") return "";
-  if (post.slug === "мясник-1fe0ee") return "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/weapons/myasnik.jpg";
-  return parseWeaponContent(post.content).image;
+  return resolveWeaponImage(post.title, parseWeaponContent(post.content).image);
 }
 
 export function HubClient({ initialPosts, storageUnavailable = false }: { initialPosts: HubPost[]; storageUnavailable?: boolean }) {
