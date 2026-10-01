@@ -4,7 +4,7 @@ export type WeaponControl = "easy" | "medium" | "hard";
 export type WeaponRole = "entry" | "support" | "universal";
 export type WeaponFireMode = "automatic" | "semi-automatic" | "burst" | "single" | "bolt" | "pump";
 export type WeaponKind = "firearm" | "melee";
-export type WeaponCategory = "shotguns" | "smgs" | "assault-rifles" | "sniper-rifles" | "marksman-rifles" | "lmgs" | "pistols" | "melee";
+export type WeaponCategory = "shotguns" | "smgs" | "assault-rifles" | "sniper-rifles" | "marksman-rifles" | "lmgs" | "pistols" | "melee" | "special";
 
 export type WeaponFields = {
   image: string;

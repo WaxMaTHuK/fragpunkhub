@@ -12,7 +12,7 @@ const filters: { value: "all" | PostType; label: string }[] = [
   { value: "all", label: "Все" }, { value: "lancer", label: "Лансеры" }, { value: "weapon", label: "Оружие" },
   { value: "shard", label: "Фрагмент карты" }, { value: "map", label: "Карты" }, { value: "update", label: "Патчи" },
 ];
-const weaponGroups = [{ value: "all", label: "Все виды" }, { value: "shotguns", label: "Дробовики" }, { value: "smgs", label: "Пистолеты-пулемёты" }, { value: "assault-rifles", label: "Штурмовые винтовки" }, { value: "sniper-rifles", label: "Снайперские винтовки" }, { value: "marksman-rifles", label: "Марксманские винтовки" }, { value: "lmgs", label: "Ручные пулемёты" }, { value: "pistols", label: "Пистолеты" }, { value: "melee", label: "Ближний бой" }] as const;
+const weaponGroups = [{ value: "all", label: "Все виды" }, { value: "shotguns", label: "Дробовики" }, { value: "smgs", label: "Пистолеты-пулемёты" }, { value: "assault-rifles", label: "Штурмовые винтовки" }, { value: "sniper-rifles", label: "Снайперские винтовки" }, { value: "marksman-rifles", label: "Марксманские винтовки" }, { value: "lmgs", label: "Ручные пулемёты" }, { value: "pistols", label: "Пистолеты" }, { value: "melee", label: "Ближний бой" }, { value: "special", label: "Специальное оружие" }] as const;
 const categoryCards: { type: PostType; code: string; title: string; copy: string }[] = [
   { type: "lancer", code: "L", title: "Лансеры", copy: "Способности и советы" },
   { type: "weapon", code: "W", title: "Оружие", copy: "Характеристики и выбор" },
