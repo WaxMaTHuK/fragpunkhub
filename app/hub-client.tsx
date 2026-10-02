@@ -38,7 +38,7 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
 
   return <div className="site-shell">
     <header className="site-header"><div className="wrap header-row">
-      <a className="brand" href="#top" aria-label="FragPunk Hub — на главную"><span className="brand-mark" aria-hidden="true" /><span className="brand-text"><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a>
+      <a className="brand" href="#top" aria-label="ФрагПанк Хаб — на главную"><span className="brand-mark" aria-hidden="true" /><span className="brand-text"><strong>ФРАГПАНК</strong><small>ХАБ.РУ</small></span></a>
       <nav className="main-nav" aria-label="Основная навигация"><a href="#materials">Материалы</a><a className="profile-link" href="/profile">Кабинет</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
     </div></header>
     <main className="wrap main-content" id="top">
@@ -56,6 +56,6 @@ export function HubClient({ initialPosts, storageUnavailable = false }: { initia
         {visiblePosts.length ? <div className="post-grid">{visiblePosts.map((post) => { const preview = weaponPreview(post); return <a key={post.id} className={`post-card color-${post.accent}${preview ? " has-preview" : ""}`} href={`/materials/${post.slug}`}><span className="post-arrow"><ArrowUpRight size={17} /></span><span className="post-meta"><b>{TYPE_LABELS[post.type]}</b><i>·</i>{post.readTime}</span><strong>{post.title}</strong><small>{post.summary}</small>{preview ? <img className="post-weapon-preview" src={preview} alt="" /> : <span className="post-letter" aria-hidden="true">{post.title.charAt(0)}</span>}</a>; })}</div> : <div className="empty-card"><Zap /><strong>Ничего не найдено</strong><p>Попробуй другой запрос или выбери все материалы.</p></div>}
       </section>
     </main>
-    <footer><div className="wrap footer-row"><p>Неофициальный русскоязычный информационный портал. FragPunk и связанные материалы принадлежат их правообладателям.</p><strong>Проект <span>WaxMaTHuK</span></strong></div></footer>
+    <footer><div className="wrap footer-row"><p>Неофициальный русскоязычный информационный портал. ФрагПанк и связанные материалы принадлежат их правообладателям.</p><strong>Проект <span>WaxMaTHuK</span></strong></div></footer>
   </div>;
 }

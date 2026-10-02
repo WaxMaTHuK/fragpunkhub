@@ -1,3 +1,4 @@
+import { russianText } from "./russian-content";
 import { listPosts, savePost } from "@/db/content";
 import type { HubPost } from "@/lib/hub-content";
 
@@ -160,7 +161,8 @@ export async function seedLancerCatalog(): Promise<{ created: number; skipped: n
     .map((post) => post.title.trim().toLocaleLowerCase("ru-RU")));
   let created = 0;
   let skipped = 0;
-  for (const lancer of LANCERS) {
+  for (const entry of LANCERS) {
+    const lancer = { ...entry, title: russianText(entry.title), summary: russianText(entry.summary), content: russianText(entry.content) };
     if (existing.has(lancer.title.toLocaleLowerCase("ru-RU"))) {
       skipped++;
       continue;

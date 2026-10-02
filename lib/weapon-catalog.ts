@@ -1,3 +1,4 @@
+import { russianText } from "./russian-content";
 import { listPosts, savePost } from "@/db/content";
 import { makeWeaponContent, type WeaponFields } from "@/lib/weapon-content";
 import type { HubPost } from "@/lib/hub-content";
@@ -41,7 +42,8 @@ export async function seedWeaponCatalog(): Promise<{ created: number; skipped: n
   const existing = new Set((await listPosts(true)).map((post) => post.title.trim().toLocaleLowerCase("ru-RU")));
   let created = 0;
   for (let index = 0; index < weapons.length; index += 1) {
-    const weapon = weapons[index];
+    const entry = weapons[index];
+    const weapon = { ...entry, title: russianText(entry.title), summary: russianText(entry.summary), description: russianText(entry.description) };
     if (existing.has(weapon.title.toLocaleLowerCase("ru-RU"))) continue;
     const content = makeWeaponContent(base({ ...weapon.fields, description: weapon.description }));
     await savePost({ type:"weapon", title:weapon.title, summary:weapon.summary, content, readTime:"2 мин", accent:index % 3 === 0 ? "acid" : index % 3 === 1 ? "purple" : "cyan", published:true, sortOrder:1000 + index }, "site-owner");

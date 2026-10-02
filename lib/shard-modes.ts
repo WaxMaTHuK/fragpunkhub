@@ -1,13 +1,18 @@
 export const SHARD_MODES = [
-  { id: "ranked", label: "Рейтинговый", note: "Отдельный пул рейтинга. Подтверждённые исключения показаны в архиве; полный актуальный набор ещё уточняется." },
-  { id: "standard", label: "Стандартный бой", note: "Shard Clash. Подтверждённые изменения пула; полный актуальный набор ещё уточняется." },
-  { id: "chaos", label: "Хаотичный бой", note: "Chaos Clash. Пул проверяется отдельно от стандартного боя." },
-  { id: "deathmatch", label: "Бой насмерть", note: "Deathmatch. Подтверждённые изменения, включая обновление от 27 августа 2026." },
-  { id: "outbreak", label: "Вспышка · Outbreak", note: "Режим с паразитами. Отдельный пул, не объединённый с PvE." },
-  { id: "toy", label: "PvE · Игрушечное наступление", note: "Toy Front Line. Полный набор и уровни PvE-фрагментов ещё уточняются." },
-  { id: "endless", label: "PvE · Выживание", note: "Бесконечный режим Toy Front Line. Фрагменты выпадают во время игры и улучшаются объединением. Полный набор ещё уточняется." },
-  { id: "deck", label: "Deck Gear Up", note: "Отдельные колоды фракций. Полный состав ещё уточняется." },
-  { id: "other", label: "Другие режимы", note: "Горячая зона, захват ядра, зеркальный бой и временные режимы: актуальные наборы проверяются отдельно." },
+  { id: "standard", label: "Бой фрагментов: Стандартный" },
+  { id: "capture-points", label: "Захват точек" },
+  { id: "ranked", label: "Бой фрагментов: Рейтинговый" },
+  { id: "chaos", label: "Хаотичный бой" },
+  { id: "outbreak", label: "Эпидемия" },
+  { id: "hide-and-seek", label: "Прятки" },
+  { id: "team-standard", label: "Командный бой насмерть: Стандарт" },
+  { id: "team-chaos", label: "Командный бой насмерть: Хаос" },
+  { id: "kill-confirmed", label: "Подтверждение убийства" },
+  { id: "deathmatch", label: "Бой насмерть" },
+  { id: "team-deck", label: "Командный бой насмерть: Колода" },
+  { id: "capture-core", label: "Захват ядра" },
+  { id: "toy", label: "Игрушечное наступление" },
+  { id: "endless", label: "Игрушечное наступление: Выживание" },
 ] as const;
 export type ShardMode = typeof SHARD_MODES[number]["id"];
 export function shardModes(content: string): ShardMode[] {

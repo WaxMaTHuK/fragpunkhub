@@ -15,7 +15,7 @@ export default async function AdminLoginPage({
 
   return <main className="admin-login-page">
     <section className="admin-login-card">
-      <a className="admin-login-brand" href="/"><span className="brand-mark" aria-hidden="true" /><span><strong>FRAGPUNK</strong><small>HUB.RU</small></span></a>
+      <a className="admin-login-brand" href="/"><span className="brand-mark" aria-hidden="true" /><span><strong>ФРАГПАНК</strong><small>ХАБ.РУ</small></span></a>
       <div className="admin-login-icon"><LockKeyhole /></div>
       <p className="eyebrow">Вход владельца</p>
       <h1>Редактор сайта</h1>

@@ -11,12 +11,12 @@ function normalize(value: string) {
   return value.trim().toLocaleLowerCase("ru-RU").replace(/ё/g, "е").replace(/[()]/g, "").replace(/\s+/g, " ");
 }
 
-register("weapons/beshenyy-pes-s.png", "Бешеный пёс (S)", "Mad Dog-S");
+register("weapons/beshenyy-pes-s.png", "Бешеный пёс (S)", "Бешеный пёс (с глушителем)", "Mad Dog-S");
 register("weapons/distsiplina.png", "Дисциплина", "Discipline");
 register("weapons/likhoradka.png", "Лихорадка", "Fever");
 register("weapons/podavlenie.png", "Подавление", "Clampdown");
 register("weapons/prizrachnyy-perets.png", "Призрачный перец", "Ghost Pepper");
-register("images/weapons/bad-moon-s.png", "Кровавая луна (S)", "Bad Moon-S");
+register("images/weapons/bad-moon-s.png", "Кровавая луна (S)", "Кровавая луна (с глушителем)", "Bad Moon-S");
 register("images/weapons/bad-reputation.png", "Плохая репутация", "Bad Reputation");
 register("images/weapons/highlife.png", "Весёлая жизнь", "Highlife");
 register("images/weapons/my-way.png", "Первопроходец", "My Way");

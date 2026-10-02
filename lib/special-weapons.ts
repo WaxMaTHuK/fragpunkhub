@@ -1,3 +1,4 @@
+import { russianText } from "./russian-content";
 import { DEFAULT_WEAPON_FIELDS, makeWeaponContent } from "./weapon-content";
 
 // Confirmed game assets: https://fragpunkskins.com/weapons (GW003, GW002).
@@ -16,7 +17,8 @@ export const SPECIAL_WEAPONS = [
   },
 ].map((weapon, index) => ({
   ...weapon,
+  title: russianText(weapon.title), summary: russianText(weapon.summary),
   type: "weapon" as const, readTime: "2 мин", accent: index === 0 ? "cyan" : "purple",
   published: true, sortOrder: 1100 + index,
-  content: makeWeaponContent({ ...DEFAULT_WEAPON_FIELDS, category: "special", image: imageRoot + weapon.image, description: weapon.description }),
+  content: makeWeaponContent({ ...DEFAULT_WEAPON_FIELDS, category: "special", image: imageRoot + weapon.image, description: russianText(weapon.description) }),
 }));

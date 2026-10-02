@@ -126,4 +126,4 @@ export const LANCER_ASSETS = [
     "image": "https://raw.githubusercontent.com/RyusAceVA/fragpunk-assets/main/lancers/skins_icon/Icon_Lancers_Roleskin__C052_Base.png"
   }
 ];
-export function lancerAsset(title: string) { return LANCER_ASSETS.find(item => item.name.toLowerCase() === title.toLowerCase() || item.english.toLowerCase() === title.toLowerCase()); }
+export function lancerAsset(title: string) { return LANCER_ASSETS.find(item => item.name.replace(/ \([A-Za-z]+\)/g, "").toLowerCase() === title.replace(/ \([A-Za-z]+\)/g, "").toLowerCase() || item.english.toLowerCase() === title.toLowerCase()); }

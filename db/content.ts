@@ -2,6 +2,7 @@ import { asc, eq } from "drizzle-orm";
 import { type HubPost, type PostType } from "@/lib/hub-content";
 import { getDb } from ".";
 import { posts } from "./schema";
+import { ensureRussianRefresh } from "./russian-refresh";
 import { ensureCatalogRefresh } from "./catalog-refresh";
 import { ensureWeaponImport } from "./weapon-import";
 
@@ -12,6 +13,7 @@ function toHubPost(row: typeof posts.$inferSelect): HubPost {
 export async function listPosts(includeDrafts: boolean): Promise<HubPost[]> {
   await ensureWeaponImport();
   await ensureCatalogRefresh();
+  await ensureRussianRefresh();
   const db = getDb();
   const rows = includeDrafts
     ? await db.select().from(posts).orderBy(asc(posts.sortOrder), asc(posts.title))
