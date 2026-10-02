@@ -27,10 +27,10 @@ export function LancerViewer({ name, skins }: { name: string; skins: LancerSkin[
         style: { width: "100%", height: "100%", background: "transparent" },
       })}
       {!ready && !error && <p className="lancer-viewer-message">Загружаем модель…</p>}
-      {error && <p className="lancer-viewer-message">Модель пока не загрузилась. Выбери другой облик или попробуй позже.</p>}
+      {error && <p className="lancer-viewer-message">Модель пока не загрузилась. Попробуй обновить страницу.</p>}
     </div>
-    <div className="lancer-skins" role="group" aria-label="Облики лансера">
+    {skins.length > 1 && <div className="lancer-skins" role="group" aria-label="Облики лансера">
       {skins.map((item, index) => <button key={`${item.name}-${index}`} type="button" className={index === selected ? "active" : ""} aria-pressed={index === selected} onClick={() => { setSelected(index); setError(false); }}>{item.name}</button>)}
-    </div>
+    </div>}
   </section>;
 }

@@ -1,0 +1,3116 @@
+[
+  {
+    "name": "A Knife in the Dark",
+    "image": "https://fragpunk.it/cards-images/A%20Knife%20in%20the%20Dark.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "A Main Ban",
+    "image": "https://fragpunk.it/cards-images/A%20Main%20Ban.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "A Short Ban",
+    "image": "https://fragpunk.it/cards-images/A%20Short%20Ban.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Acceleration Traps",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Agile Marksman",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Повышает скорость передвижения при прицеливании."
+  },
+  {
+    "name": "Anniversary Badge",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Anniversary Cake",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Anniversary Doughnut",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Anti-Healing Bullet",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Anti-Healing Bullets",
+    "image": "https://fragpunk.it/cards-images/Anti-Healing%20Bullets.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Archer",
+    "image": "https://fragpunk.it/cards-images/Archer.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Assault Hammer",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Auto-Load",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Avenge Me!",
+    "image": "https://fragpunk.it/cards-images/Avenge%20Me%21.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "B Main Ban",
+    "image": "https://fragpunk.it/cards-images/B%20Main%20Ban.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "B Short Ban",
+    "image": "https://fragpunk.it/cards-images/B%20Short%20Ban.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Backup Weapon",
+    "image": "https://fragpunk.it/cards-images/Backup%20Weapon.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Bad Knees",
+    "image": "https://fragpunk.it/cards-images/Bad%20Knees.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Band-Aid Solution",
+    "image": "https://fragpunk.it/cards-images/Band-Aid%20Solution.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Barrier Destruction",
+    "image": "",
+    "modes": {
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Barrier destruction",
+    "image": "https://fragpunk.it/cards-images/Barrier%20destruction.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Battle Drummer",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Battle-Hardened",
+    "image": "https://fragpunk.it/cards-images/Battle-Hardened.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Beat Runner",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Beauty Sleep",
+    "image": "https://fragpunk.it/cards-images/Beauty%20Sleep.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Behind Enemy Lines",
+    "image": "https://fragpunk.it/cards-images/Behind%20Enemy%20Lines.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Berserker",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Big Heads",
+    "image": "https://fragpunk.it/cards-images/Big%20Heads.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Bigger Bombs",
+    "image": "https://fragpunk.it/cards-images/Bigger%20Bombs.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Увеличивает радиус взрывов."
+  },
+  {
+    "name": "Bigger and Badder",
+    "image": "https://fragpunk.it/cards-images/Bigger%20and%20Badder.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Bio-Warrior",
+    "image": "https://fragpunk.it/cards-images/Bio-Warrior.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Birdman",
+    "image": "https://fragpunk.it/cards-images/Birdman.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Black Hole Traps",
+    "image": "https://fragpunk.it/cards-images/Black%20Hole%20Traps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Blade Master",
+    "image": "https://fragpunk.it/cards-images/Blade%20Master.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Blast Suits",
+    "image": "https://fragpunk.it/cards-images/Blast%20Suits.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Снижает получаемый урон от взрывов."
+  },
+  {
+    "name": "Blessed Bullet",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Blessed Hat",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Blind Fire Healing",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Blood Frenzy",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Bot Dance",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Bounce Mushroom",
+    "image": "https://fragpunk.it/cards-images/Bounce%20Mushroom.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Boxing Champion",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Breaching Hammer",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Даёт штурмовой молот."
+  },
+  {
+    "name": "Broken Bridge",
+    "image": "https://fragpunk.it/cards-images/Broken%20Bridge.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Bullet Upgrade",
+    "image": "https://fragpunk.it/cards-images/Bullet%20Upgrade.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Bulletproof Design",
+    "image": "https://fragpunk.it/cards-images/Bulletproof%20Design.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "26.06.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Bulletproof Doors",
+    "image": "https://fragpunk.it/cards-images/Bulletproof%20Doors.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Bulletproof Vest",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Снижает урон от попаданий в корпус."
+  },
+  {
+    "name": "Burn the Boats",
+    "image": "https://fragpunk.it/cards-images/Burn%20the%20Boats.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Butterfingers",
+    "image": "https://fragpunk.it/cards-images/Butterfingers.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Candy Bait",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Candy Rocket",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Candy Treasure",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Chain Reaction",
+    "image": "https://fragpunk.it/cards-images/Chain%20Reaction.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Charged Rush",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Choke",
+    "image": "https://fragpunk.it/cards-images/Choke.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Clear Path",
+    "image": "https://fragpunk.it/cards-images/Clear%20Path.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Cloaking Plant",
+    "image": "https://fragpunk.it/cards-images/Cloaking%20Plant.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Clone Tech",
+    "image": "https://fragpunk.it/cards-images/Clone%20Tech.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Close Havoc",
+    "image": "https://fragpunk.it/cards-images/Close%20Havoc.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Close Quarters Combat",
+    "image": "https://fragpunk.it/cards-images/Close%20Quarters%20Combat.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Close-Quarters Expert",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Cold Front",
+    "image": "https://fragpunk.it/cards-images/Cold%20Front.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Community Healthcare",
+    "image": "https://fragpunk.it/cards-images/Community%20Healthcare.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Converter Camouflage",
+    "image": "https://fragpunk.it/cards-images/Converter%20Camouflage.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "26.06.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Converter Feeding",
+    "image": "https://fragpunk.it/cards-images/Converter%20Feeding.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Converter Gift",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Converter Shield",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Converter Sprint",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Ускоряет игрока, несущего конвертер."
+  },
+  {
+    "name": "Converter Thievery",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Counterattack",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Critical Reload",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Cure Shot",
+    "image": "https://fragpunk.it/cards-images/Healing%20Shot.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Cure-All",
+    "image": "",
+    "description": "Можно включать в колоды любой фракции в Deck Gear Up.",
+    "modes": {
+      "deck": {
+        "status": "added",
+        "date": "04.12.2025"
+      }
+    }
+  },
+  {
+    "name": "Curling Impact",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Cursed Crits",
+    "image": "https://fragpunk.it/cards-images/Cursed%20Crits.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Dance Floor",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Dancing King",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "De-Debuffs",
+    "image": "https://fragpunk.it/cards-images/De-Debuffs.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Dead Zone",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Deadly Rewind",
+    "image": "https://fragpunk.it/cards-images/Deadly%20Rewind.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Death's Embrace",
+    "image": "https://fragpunk.it/cards-images/Deaths%20Embrace.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Deathmatch",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Demolition Extension",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Demon Eyes",
+    "image": "https://fragpunk.it/cards-images/Demon%20Eyes.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Detection Bullet",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Dibs",
+    "image": "https://fragpunk.it/cards-images/Dibs.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Dimensional Travel",
+    "image": "https://fragpunk.it/cards-images/Dimensional%20Travel.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Doomsday Bomb",
+    "image": "https://fragpunk.it/cards-images/Doomsday%20Bomb.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Dr. Converter",
+    "image": "https://fragpunk.it/cards-images/Dr.%20Converter.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Dragon's Breath",
+    "image": "https://fragpunk.it/cards-images/Dragons%20Breath.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Driving Rain",
+    "image": "https://fragpunk.it/cards-images/Driving%20Rain.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Drought",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Dullahans",
+    "image": "https://fragpunk.it/cards-images/Dullahans.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Eagle Eyes",
+    "image": "https://fragpunk.it/cards-images/Eagle%20Eyes.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Electrocution",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Elusiveness",
+    "image": "https://fragpunk.it/cards-images/Elusiveness.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Emergency Evacuation",
+    "image": "https://fragpunk.it/cards-images/Emergency%20Evacuation.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Endless Battle",
+    "image": "https://fragpunk.it/cards-images/Endless%20Battle.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Equipment Supply",
+    "image": "https://fragpunk.it/cards-images/Equipment%20Supply.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Everybody Dance Now",
+    "image": "https://fragpunk.it/cards-images/Everybody%20Dance%20Now.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Expert Juggler",
+    "image": "https://fragpunk.it/cards-images/Expert%20Juggler.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Explosion Specialist",
+    "image": "https://fragpunk.it/cards-images/Explosion%20Specialist.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Увеличивает взрывной урон."
+  },
+  {
+    "name": "Explosive Shot",
+    "image": "https://fragpunk.it/cards-images/Explosive%20Shot.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Превращает пули во взрывающиеся снаряды."
+  },
+  {
+    "name": "Extended Reach",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Extra Converter",
+    "image": "https://fragpunk.it/cards-images/Extra%20Converter.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Extra Pellets",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Extra Projectiles",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Extra Site",
+    "image": "https://fragpunk.it/cards-images/Extra%20Site.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Eye of the Reaper",
+    "image": "https://fragpunk.it/cards-images/Eye%20of%20the%20Reaper.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Fast Reload",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Fearless",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Feel the Bass",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Feral Hogs",
+    "image": "https://fragpunk.it/cards-images/Feral%20Hogs.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Festive Converter",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Festive Fight",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Finish Line",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Первый союзник, добравшийся до линии финиша, получает усиление."
+  },
+  {
+    "name": "Flare",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Flash Bullet",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Flashlight",
+    "image": "https://fragpunk.it/cards-images/Flashlight.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Flashy Projectiles",
+    "image": "https://fragpunk.it/cards-images/Flashy%20Projectiles.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Foot Dragging",
+    "image": "https://fragpunk.it/cards-images/Foot%20Dragging.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Fragile Converter",
+    "image": "https://fragpunk.it/cards-images/Fragile%20Converter.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Fragmentation Bullet",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Free For All",
+    "image": "https://fragpunk.it/cards-images/Free%20For%20All.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Free Refills!",
+    "image": "https://fragpunk.it/cards-images/Free%20Refills%21.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Freestyle Placement",
+    "image": "https://fragpunk.it/cards-images/Freestyle%20Placement.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Freeze Bullet",
+    "image": "https://fragpunk.it/cards-images/Freeze%20Bullet.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Попадания замедляют противника."
+  },
+  {
+    "name": "From the Hip",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "From the Shadows",
+    "image": "https://fragpunk.it/cards-images/From%20the%20Shadows.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Frozen Kerplunk",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Frozen Wasteland",
+    "image": "https://fragpunk.it/cards-images/Frozen%20Wasteland.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Full Fire Power",
+    "image": "https://fragpunk.it/cards-images/Full%20Fire%20Power.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Full Moon",
+    "image": "https://fragpunk.it/cards-images/Full%20Moon.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Gadget Breaker",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Gingerbread Overheal",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Guerrilla Fighter",
+    "image": "https://fragpunk.it/cards-images/Guerrilla%20Fighter.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Guess Who",
+    "image": "https://fragpunk.it/cards-images/Guess%20Who.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Gun Tune-Up",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Осмотр оружия постепенно повышает его урон."
+  },
+  {
+    "name": "HUD Remix",
+    "image": "https://fragpunk.it/cards-images/HUD%20Remix.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Hand-Off",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Hard Rain",
+    "image": "https://fragpunk.it/cards-images/Hard%20Rain.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Haunting",
+    "image": "https://fragpunk.it/cards-images/Haunting.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Headache Vision",
+    "image": "https://fragpunk.it/cards-images/Headache%20Vision.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Heads & Toes",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Headshot Master",
+    "image": "https://fragpunk.it/cards-images/Headshot%20Master.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Увеличивает урон от попаданий в голову."
+  },
+  {
+    "name": "Heal-All",
+    "image": "https://fragpunk.it/cards-images/Heal-All.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Healing Site A",
+    "image": "https://fragpunk.it/cards-images/Healing%20Site%20A.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Healing Site B",
+    "image": "https://fragpunk.it/cards-images/Healing%20Site%20B.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Health Club",
+    "image": "https://fragpunk.it/cards-images/Health%20Club.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Healthy Sprint",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Healthy Stretching",
+    "image": "https://fragpunk.it/cards-images/Healthy%20Stretching.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Heavy Armor",
+    "image": "https://fragpunk.it/cards-images/Heavy%20Armor.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Hidden Cameras",
+    "image": "https://fragpunk.it/cards-images/Hidden%20Cameras.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "High Ground",
+    "image": "https://fragpunk.it/cards-images/High%20Ground.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Hold the Pass",
+    "image": "https://fragpunk.it/cards-images/Hold%20the%20Pass.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Holistic Deadicine",
+    "image": "https://fragpunk.it/cards-images/Holistic%20Deadicine.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Homing Projectiles",
+    "image": "https://fragpunk.it/cards-images/Homing%20Projectiles.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Hyperkinetic Bullet",
+    "image": "https://fragpunk.it/cards-images/Hyperkinetic%20Bullet.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "I, Zombie",
+    "image": "",
+    "modes": {
+      "outbreak": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "IP Theft",
+    "image": "https://fragpunk.it/cards-images/IP%20Theft.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Infernal Hounds",
+    "image": "https://fragpunk.it/cards-images/Infernal%20Hounds.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Informant",
+    "image": "https://fragpunk.it/cards-images/Informant.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Inherit the Wind",
+    "image": "https://fragpunk.it/cards-images/Inherit%20the%20Wind.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Initial Scan",
+    "image": "https://fragpunk.it/cards-images/Initial%20Scan.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Interception!",
+    "image": "https://fragpunk.it/cards-images/Interception%21.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Invest the Future",
+    "image": "https://fragpunk.it/cards-images/Invest%20the%20Future.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Invisible Traps",
+    "image": "https://fragpunk.it/cards-images/Invisible%20Traps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Iron Head",
+    "image": "https://fragpunk.it/cards-images/Iron%20Head.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "21.08.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Iron Torso",
+    "image": "",
+    "modes": {
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "It's Mine Now",
+    "image": "https://fragpunk.it/cards-images/Its%20Mine%20Now.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Itchy Triggers",
+    "image": "https://fragpunk.it/cards-images/Itchy%20Triggers.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "02.04.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Jump Shot Expert",
+    "image": "https://fragpunk.it/cards-images/Jump%20Shot%20Expert.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Kill Reward",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Killstreak Bonus",
+    "image": "https://fragpunk.it/cards-images/Killstreak%20Bonus.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "King of Eggs",
+    "image": "https://fragpunk.it/cards-images/King%20of%20Eggs.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Large Bounty",
+    "image": "https://fragpunk.it/cards-images/Large%20Bounty.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Large Caliber",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Leader of the Dead",
+    "image": "https://fragpunk.it/cards-images/Leader%20of%20the%20Dead.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Let Them Hear You",
+    "image": "https://fragpunk.it/cards-images/Let%20Them%20Hear%20You.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "02.04.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Life Saver",
+    "image": "https://fragpunk.it/cards-images/Life%20Saver.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Lingering Smoke",
+    "image": "https://fragpunk.it/cards-images/Lingering%20Smoke.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Long Dash",
+    "image": "https://fragpunk.it/cards-images/Long%20Dash.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Long-term Investment",
+    "image": "https://fragpunk.it/cards-images/Long-term%20Investment.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Lucky Bag",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Lucky Bullets",
+    "image": "https://fragpunk.it/cards-images/Lucky%20Bullets.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Mass Cheetah",
+    "image": "https://fragpunk.it/cards-images/Mass%20Cheetah.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Maximum Overhealth",
+    "image": "https://fragpunk.it/cards-images/Maximum%20Overhealth.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Medical Error",
+    "image": "https://fragpunk.it/cards-images/Medical%20Error.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Melee Rod",
+    "image": "https://fragpunk.it/cards-images/Melee%20Rod.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Melon Rinds",
+    "image": "https://fragpunk.it/cards-images/Melon%20Rinds.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Mini Mags",
+    "image": "https://fragpunk.it/cards-images/Mini%20Mags.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Mini Traps",
+    "image": "https://fragpunk.it/cards-images/Mini%20Traps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Mission Bound",
+    "image": "https://fragpunk.it/cards-images/Mission%20Bound.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Misty A Site",
+    "image": "https://fragpunk.it/cards-images/Misty%20A%20Site.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Misty B Site",
+    "image": "https://fragpunk.it/cards-images/Misty%20B%20Site.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Mobile Arsenal",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Morale Booster",
+    "image": "https://fragpunk.it/cards-images/Morale%20Booster.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Muscle Weakness",
+    "image": "https://fragpunk.it/cards-images/Muscle%20Weakness.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Music Bomb",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Nerfed A Site",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Nerfed Site A",
+    "image": "https://fragpunk.it/cards-images/Nerfed%20Site%20A.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Nerfed Site B",
+    "image": "https://fragpunk.it/cards-images/Nerfed%20Site%20B.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Note Collection",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "OH, Compassion",
+    "image": "https://fragpunk.it/cards-images/OH%20Compassion.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Offense Defense",
+    "image": "https://fragpunk.it/cards-images/Offense%20Defense.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Open Your Big Trap",
+    "image": "https://fragpunk.it/cards-images/Open%20Your%20Big%20Trap.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Origin Detection",
+    "image": "https://fragpunk.it/cards-images/Origin%20Detection.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Painful Bond",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Painful Motivation",
+    "image": "https://fragpunk.it/cards-images/Painful%20Motivation.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Painted Blessing",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Временно повышает здоровье и скорость, восстанавливая здоровье."
+  },
+  {
+    "name": "Parting Carols",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Parting Compensation",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Parting Converter",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Погибшие игроки оставляют конвертер."
+  },
+  {
+    "name": "Parting Flash",
+    "image": "https://fragpunk.it/cards-images/Parting%20Flash.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Parting Pine Needles",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Parting Vision",
+    "image": "https://fragpunk.it/cards-images/Parting%20Vision.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Peace Treaty",
+    "image": "https://fragpunk.it/cards-images/Peace%20Treaty.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Penguin",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "29.01.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Phantom A Site",
+    "image": "https://fragpunk.it/cards-images/Phantom%20A%20Site.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Phantom B Site",
+    "image": "https://fragpunk.it/cards-images/Phantom%20B%20Site.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Piercing Bullet",
+    "image": "https://fragpunk.it/cards-images/Piercing%20Bullet.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Позволяет пулям пробить стену."
+  },
+  {
+    "name": "Plenty of Ammo",
+    "image": "https://fragpunk.it/cards-images/Plenty%20of%20Ammo.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Portable Detector",
+    "image": "https://fragpunk.it/cards-images/Portable%20Detector.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Portal Malfunction",
+    "image": "https://fragpunk.it/cards-images/Portal%20Malfunction.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Power Failure",
+    "image": "https://fragpunk.it/cards-images/Power%20Failure.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Powerful Strike",
+    "image": "https://fragpunk.it/cards-images/Powerful%20Strike.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Projectile Scan",
+    "image": "https://fragpunk.it/cards-images/Projectile%20Scan.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Prosthetic Enhancements",
+    "image": "https://fragpunk.it/cards-images/Prosthetic%20Enhancements.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Prosthetic Eye",
+    "image": "https://fragpunk.it/cards-images/Prosthetic%20Eye.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Psychic Defusing",
+    "image": "https://fragpunk.it/cards-images/Psychic%20Defusing.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Psychic Link",
+    "image": "https://fragpunk.it/cards-images/Psychic%20Link.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Pull the Plug",
+    "image": "https://fragpunk.it/cards-images/Pull%20the%20Plug.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Quick ADS",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Quick Charge",
+    "image": "https://fragpunk.it/cards-images/Quick%20Charge.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Quick Defuse",
+    "image": "https://fragpunk.it/cards-images/Quick%20Defuse.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Quick Draw",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Quick Fists",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Quick Reload",
+    "image": "https://fragpunk.it/cards-images/Quick%20Reload.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Ускоряет или мгновенно завершает перезарядку — зависит от варианта фрагмента."
+  },
+  {
+    "name": "Quick Shot",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Повышает скорострельность."
+  },
+  {
+    "name": "Quick Sniping",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Сокращает интервал между выстрелами снайперских винтовок."
+  },
+  {
+    "name": "Quickstart",
+    "image": "https://fragpunk.it/cards-images/Quickstart.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Rabbit Legs",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Random Teleportation",
+    "image": "https://fragpunk.it/cards-images/Random%20Teleportation.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Rapid Marksman Rifle",
+    "image": "https://fragpunk.it/cards-images/Rapid%20Marksman%20Rifle.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Снижает отдачу марксманских винтовок и убирает ограничение темпа стрельбы."
+  },
+  {
+    "name": "Reactive Armor",
+    "image": "https://fragpunk.it/cards-images/Reactive%20Armor.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Ready to Strike",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Reap What You Sow",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Reaper's Scythe",
+    "image": "https://fragpunk.it/cards-images/Reapers%20Scythe.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "02.04.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Red Envelope Time",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Regenerative Therapy",
+    "image": "https://fragpunk.it/cards-images/Regenerative%20Therapy.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Relativistic Bullets",
+    "image": "https://fragpunk.it/cards-images/Relativistic%20Bullets.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Relay Race",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Relocation",
+    "image": "https://fragpunk.it/cards-images/Relocation.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Return to Sender",
+    "image": "https://fragpunk.it/cards-images/Return%20to%20Sender.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Ricochet",
+    "image": "https://fragpunk.it/cards-images/Ricochet.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Rift Expansion",
+    "image": "https://fragpunk.it/cards-images/Rift%20Expansion.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Rigged Duels",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Roger, Roger",
+    "image": "https://fragpunk.it/cards-images/Roger%20Roger.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Run and Gun",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Safety Glasses",
+    "image": "https://fragpunk.it/cards-images/Safety%20Glasses.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Scan Reductions",
+    "image": "https://fragpunk.it/cards-images/Scan%20Reductions.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Scanner Interference",
+    "image": "https://fragpunk.it/cards-images/Scanner%20Interference.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Scanning Bat",
+    "image": "https://fragpunk.it/cards-images/Scanning%20Bat.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Secret Planting",
+    "image": "https://fragpunk.it/cards-images/Secret%20Planting.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Security Check",
+    "image": "https://fragpunk.it/cards-images/Security%20Check.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Shard Thief",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Убийства позволяют красть очки фрагментов противника."
+  },
+  {
+    "name": "Shark Medic",
+    "image": "",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "27.08.2026"
+      }
+    },
+    "description": "Лечащая акула следует за игроком и восстанавливает здоровье."
+  },
+  {
+    "name": "Shield Rod",
+    "image": "https://fragpunk.it/cards-images/Shield%20flag.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Short Exposure",
+    "image": "https://fragpunk.it/cards-images/Short%20Exposure.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Shotgun Charge",
+    "image": "",
+    "description": "PvE-фрагмент для дробовика. Точный эффект и уровни уточняются.",
+    "modes": {
+      "toy": {
+        "status": "added",
+        "date": "11.12.2025"
+      }
+    }
+  },
+  {
+    "name": "Silent Gunslinger",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Silent Planting",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Site Deletion",
+    "image": "https://fragpunk.it/cards-images/Site%20Deletion.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Skill Replenish",
+    "image": "https://fragpunk.it/cards-images/Skill%20Replenish.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Skill Treasures",
+    "image": "https://fragpunk.it/cards-images/Skill%20Treasures.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Skill Vampire",
+    "image": "https://fragpunk.it/cards-images/Skill%20Vampire.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Slow Bullets",
+    "image": "https://fragpunk.it/cards-images/Slow%20Bullets.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Slow Cooldown",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Slowing Sludge",
+    "image": "",
+    "modes": {
+      "outbreak": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "Паразитическая слизь замедляет цель."
+  },
+  {
+    "name": "Small Heads",
+    "image": "https://fragpunk.it/cards-images/Small%20Heads.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Smoke Shields",
+    "image": "https://fragpunk.it/cards-images/Smoke%20Shields.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Sneak Attack",
+    "image": "https://fragpunk.it/cards-images/Sneak%20Attack.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Snowman Hideout",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Sonic Boom",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Soul Cairn",
+    "image": "https://fragpunk.it/cards-images/Soul%20Cairn.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Speed Field",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Spreading Smoke",
+    "image": "https://fragpunk.it/cards-images/Spreading%20Smoke.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Sprint Fire",
+    "image": "https://fragpunk.it/cards-images/Sprint%20Fire.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Squat Defence",
+    "image": "https://fragpunk.it/cards-images/Squat%20Defence.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Squat Master",
+    "image": "https://fragpunk.it/cards-images/Squat%20Master.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Stand Up Straight!",
+    "image": "https://fragpunk.it/cards-images/Stand%20Up%20Straight%21.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Static Shield",
+    "image": "",
+    "modes": {
+      "outbreak": {
+        "status": "added",
+        "date": "29.01.2026"
+      }
+    },
+    "description": "После неподвижного ожидания восстанавливает здоровье. Движение прекращает эффект."
+  },
+  {
+    "name": "Stealth Novice",
+    "image": "https://fragpunk.it/cards-images/Stealth%20Novice.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Stealthy Start",
+    "image": "https://fragpunk.it/cards-images/Stealthy%20Start.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Super Hearing",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "SuperFly",
+    "image": "https://fragpunk.it/cards-images/SuperFly.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "SuperJump",
+    "image": "https://fragpunk.it/cards-images/SuperJump.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Superhuman",
+    "image": "https://fragpunk.it/cards-images/Superhuman.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Survival Reward",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Sustained Crab Walk",
+    "image": "https://fragpunk.it/cards-images/Sustained%20Crab%20Walk.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Sustained Exposure",
+    "image": "https://fragpunk.it/cards-images/Sustained%20Exposure.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Swap!",
+    "image": "https://fragpunk.it/cards-images/Swap%21.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Swift Resolution",
+    "image": "https://fragpunk.it/cards-images/Swift%20Resolution.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Swift Support",
+    "image": "https://fragpunk.it/cards-images/Swift%20Support.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Take Your Time",
+    "image": "https://fragpunk.it/cards-images/Take%20Your%20Time.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Tall Poppy",
+    "image": "https://fragpunk.it/cards-images/Tall%20Poppy.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Tariff",
+    "image": "https://fragpunk.it/cards-images/Tariff.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Thorn Trap",
+    "image": "https://fragpunk.it/cards-images/Thorn%20Trap.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Throw to Plant",
+    "image": "https://fragpunk.it/cards-images/Throw%20to%20Plant.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Tick Tock",
+    "image": "https://fragpunk.it/cards-images/Tick%20Tock.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Time to Snipe",
+    "image": "https://fragpunk.it/cards-images/Time%20to%20Snipe.png",
+    "modes": {
+      "deathmatch": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Time-Saving Kill",
+    "image": "https://fragpunk.it/cards-images/Time-Saving%20Kill.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Time-Saving Skill",
+    "image": "https://fragpunk.it/cards-images/Time-Saving%20Skill.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Toxic Traps",
+    "image": "https://fragpunk.it/cards-images/Toxic%20Traps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Toy Traps",
+    "image": "https://fragpunk.it/cards-images/Toy%20Traps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Track Bullet",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Trick or Treat",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Turtleback",
+    "image": "https://fragpunk.it/cards-images/Turtleback.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Two-Way Portals",
+    "image": "https://fragpunk.it/cards-images/Two-Way%20Portals.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Vampire Bullet",
+    "image": "https://fragpunk.it/cards-images/Vampire%20Bullet.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Vampire Night",
+    "image": "https://fragpunk.it/cards-images/Vampire%20Night.png",
+    "modes": {
+      "deathmatch": {
+        "status": "added",
+        "date": "09.07.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Variety Card",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "29.01.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Vitality Staff",
+    "image": "https://fragpunk.it/cards-images/Vitality%20Staff.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Vulnerability Site A",
+    "image": "https://fragpunk.it/cards-images/Vulnerability%20Site%20A.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Vulnerability Site B",
+    "image": "https://fragpunk.it/cards-images/Vulnerability%20Site%20B.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Weak Jumps",
+    "image": "https://fragpunk.it/cards-images/Weak%20Jumps.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Weapon Ban",
+    "image": "https://fragpunk.it/cards-images/Weapon%20Ban.png",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "27.08.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Weapon Enhancement",
+    "image": "https://fragpunk.it/cards-images/Weapon%20Enhancement.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Weapon Morph",
+    "image": "https://fragpunk.it/cards-images/Weapon%20Morph.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Weapon or Life",
+    "image": "https://fragpunk.it/cards-images/Weapon%20or%20Life.png",
+    "modes": {
+      "ranked": {
+        "status": "removed",
+        "date": "02.04.2025"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Whetstone",
+    "image": "https://fragpunk.it/cards-images/Whetstone.png",
+    "modes": {},
+    "description": ""
+  },
+  {
+    "name": "Winter Apple",
+    "image": "",
+    "modes": {
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Winter Flash",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      },
+      "chaos": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Winter Gift",
+    "image": "",
+    "modes": {
+      "standard": {
+        "status": "removed",
+        "date": "26.03.2026"
+      }
+    },
+    "description": ""
+  },
+  {
+    "name": "Yoink!",
+    "image": "https://fragpunk.it/cards-images/Yoink%21.png",
+    "modes": {},
+    "description": ""
+  }
+]
