@@ -4265,5 +4265,2587 @@
       "chaos"
     ],
     "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "epidemic-001",
+    "name": "Фрагмент эпидемии 001",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-002",
+    "name": "Фрагмент эпидемии 002",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-003",
+    "name": "Фрагмент эпидемии 003",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-004",
+    "name": "Фрагмент эпидемии 004",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-005",
+    "name": "Фрагмент эпидемии 005",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-006",
+    "name": "Фрагмент эпидемии 006",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-007",
+    "name": "Фрагмент эпидемии 007",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-008",
+    "name": "Фрагмент эпидемии 008",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-009",
+    "name": "Фрагмент эпидемии 009",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-010",
+    "name": "Фрагмент эпидемии 010",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-011",
+    "name": "Фрагмент эпидемии 011",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 2,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-012",
+    "name": "Фрагмент эпидемии 012",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 2,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-013",
+    "name": "Фрагмент эпидемии 013",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 2,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-014",
+    "name": "Фрагмент эпидемии 014",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 2,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-015",
+    "name": "Фрагмент эпидемии 015",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 2,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-016",
+    "name": "Фрагмент эпидемии 016",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 3,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-017",
+    "name": "Фрагмент эпидемии 017",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 3,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-018",
+    "name": "Фрагмент эпидемии 018",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 3,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-019",
+    "name": "Фрагмент эпидемии 019",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 3,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-020",
+    "name": "Фрагмент эпидемии 020",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 3,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-021",
+    "name": "Фрагмент эпидемии 021",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 4,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-022",
+    "name": "Фрагмент эпидемии 022",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 4,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-023",
+    "name": "Фрагмент эпидемии 023",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 4,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-024",
+    "name": "Фрагмент эпидемии 024",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 4,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-025",
+    "name": "Фрагмент эпидемии 025",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 4,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-026",
+    "name": "Фрагмент эпидемии 026",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 5,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-027",
+    "name": "Фрагмент эпидемии 027",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 5,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-028",
+    "name": "Фрагмент эпидемии 028",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 5,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-029",
+    "name": "Фрагмент эпидемии 029",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 5,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-030",
+    "name": "Фрагмент эпидемии 030",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 5,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-031",
+    "name": "Фрагмент эпидемии 031",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 6,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-032",
+    "name": "Фрагмент эпидемии 032",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 6,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-033",
+    "name": "Фрагмент эпидемии 033",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 6,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-034",
+    "name": "Фрагмент эпидемии 034",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 6,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-035",
+    "name": "Фрагмент эпидемии 035",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 6,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-036",
+    "name": "Фрагмент эпидемии 036",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 7,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-037",
+    "name": "Фрагмент эпидемии 037",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 7,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-038",
+    "name": "Фрагмент эпидемии 038",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 7,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-039",
+    "name": "Фрагмент эпидемии 039",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 7,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-040",
+    "name": "Фрагмент эпидемии 040",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 7,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-041",
+    "name": "Фрагмент эпидемии 041",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 8,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-042",
+    "name": "Фрагмент эпидемии 042",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 8,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-043",
+    "name": "Фрагмент эпидемии 043",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 8,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-044",
+    "name": "Фрагмент эпидемии 044",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 8,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-045",
+    "name": "Фрагмент эпидемии 045",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 8,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-046",
+    "name": "Фрагмент эпидемии 046",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 9,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-047",
+    "name": "Фрагмент эпидемии 047",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 9,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-048",
+    "name": "Фрагмент эпидемии 048",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 9,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-049",
+    "name": "Фрагмент эпидемии 049",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 9,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-050",
+    "name": "Фрагмент эпидемии 050",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 9,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-051",
+    "name": "Фрагмент эпидемии 051",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 10,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-052",
+    "name": "Фрагмент эпидемии 052",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 10,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-053",
+    "name": "Фрагмент эпидемии 053",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 10,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-054",
+    "name": "Фрагмент эпидемии 054",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 10,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-055",
+    "name": "Фрагмент эпидемии 055",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 10,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "survivors",
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-056",
+    "name": "Фрагмент эпидемии 056",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 11,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-057",
+    "name": "Фрагмент эпидемии 057",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 11,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-058",
+    "name": "Фрагмент эпидемии 058",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 11,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-059",
+    "name": "Фрагмент эпидемии 059",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 11,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-060",
+    "name": "Фрагмент эпидемии 060",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 11,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-061",
+    "name": "Фрагмент эпидемии 061",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 12,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-062",
+    "name": "Фрагмент эпидемии 062",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 12,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-063",
+    "name": "Фрагмент эпидемии 063",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 12,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-064",
+    "name": "Фрагмент эпидемии 064",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 12,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-065",
+    "name": "Фрагмент эпидемии 065",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 12,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-066",
+    "name": "Фрагмент эпидемии 066",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 13,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-067",
+    "name": "Фрагмент эпидемии 067",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 13,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-068",
+    "name": "Фрагмент эпидемии 068",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 13,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-069",
+    "name": "Фрагмент эпидемии 069",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 13,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-070",
+    "name": "Фрагмент эпидемии 070",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 13,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-071",
+    "name": "Фрагмент эпидемии 071",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 14,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-072",
+    "name": "Фрагмент эпидемии 072",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 14,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-073",
+    "name": "Фрагмент эпидемии 073",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 14,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-074",
+    "name": "Фрагмент эпидемии 074",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 14,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-075",
+    "name": "Фрагмент эпидемии 075",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 14,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-076",
+    "name": "Фрагмент эпидемии 076",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 15,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-077",
+    "name": "Фрагмент эпидемии 077",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 15,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-078",
+    "name": "Фрагмент эпидемии 078",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 15,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-079",
+    "name": "Фрагмент эпидемии 079",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 15,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-080",
+    "name": "Фрагмент эпидемии 080",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 15,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-081",
+    "name": "Фрагмент эпидемии 081",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 16,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-082",
+    "name": "Фрагмент эпидемии 082",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 16,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-083",
+    "name": "Фрагмент эпидемии 083",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 16,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-084",
+    "name": "Фрагмент эпидемии 084",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 16,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-085",
+    "name": "Фрагмент эпидемии 085",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 16,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-086",
+    "name": "Фрагмент эпидемии 086",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 17,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-087",
+    "name": "Фрагмент эпидемии 087",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 17,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-088",
+    "name": "Фрагмент эпидемии 088",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 17,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-089",
+    "name": "Фрагмент эпидемии 089",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 17,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-090",
+    "name": "Фрагмент эпидемии 090",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 17,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-091",
+    "name": "Фрагмент эпидемии 091",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 18,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-092",
+    "name": "Фрагмент эпидемии 092",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 18,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-093",
+    "name": "Фрагмент эпидемии 093",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 18,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-094",
+    "name": "Фрагмент эпидемии 094",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 18,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-095",
+    "name": "Фрагмент эпидемии 095",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 18,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-096",
+    "name": "Фрагмент эпидемии 096",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 19,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-097",
+    "name": "Фрагмент эпидемии 097",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 19,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-098",
+    "name": "Фрагмент эпидемии 098",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 19,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-099",
+    "name": "Фрагмент эпидемии 099",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 19,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-100",
+    "name": "Фрагмент эпидемии 100",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 19,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-101",
+    "name": "Фрагмент эпидемии 101",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 20,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-102",
+    "name": "Фрагмент эпидемии 102",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 20,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-103",
+    "name": "Фрагмент эпидемии 103",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 20,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-104",
+    "name": "Фрагмент эпидемии 104",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 20,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-105",
+    "name": "Фрагмент эпидемии 105",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 20,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-106",
+    "name": "Фрагмент эпидемии 106",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 21,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-107",
+    "name": "Фрагмент эпидемии 107",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 21,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-108",
+    "name": "Фрагмент эпидемии 108",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 21,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-109",
+    "name": "Фрагмент эпидемии 109",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 21,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-110",
+    "name": "Фрагмент эпидемии 110",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 21,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-111",
+    "name": "Фрагмент эпидемии 111",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 22,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-112",
+    "name": "Фрагмент эпидемии 112",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 22,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-113",
+    "name": "Фрагмент эпидемии 113",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 22,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-114",
+    "name": "Фрагмент эпидемии 114",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 22,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-115",
+    "name": "Фрагмент эпидемии 115",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 22,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-116",
+    "name": "Фрагмент эпидемии 116",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 23,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-117",
+    "name": "Фрагмент эпидемии 117",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 23,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-118",
+    "name": "Фрагмент эпидемии 118",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 23,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-119",
+    "name": "Фрагмент эпидемии 119",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 23,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-120",
+    "name": "Фрагмент эпидемии 120",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 23,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-121",
+    "name": "Фрагмент эпидемии 121",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 24,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-122",
+    "name": "Фрагмент эпидемии 122",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 24,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-123",
+    "name": "Фрагмент эпидемии 123",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 24,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-124",
+    "name": "Фрагмент эпидемии 124",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 24,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-125",
+    "name": "Фрагмент эпидемии 125",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 24,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-126",
+    "name": "Фрагмент эпидемии 126",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 25,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-127",
+    "name": "Фрагмент эпидемии 127",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 25,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-128",
+    "name": "Фрагмент эпидемии 128",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 25,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-129",
+    "name": "Фрагмент эпидемии 129",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 3,
+      "row": 25,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-130",
+    "name": "Фрагмент эпидемии 130",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 4,
+      "row": 25,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-131",
+    "name": "Фрагмент эпидемии 131",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 0,
+      "row": 26,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-132",
+    "name": "Фрагмент эпидемии 132",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 1,
+      "row": 26,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "epidemic-133",
+    "name": "Фрагмент эпидемии 133",
+    "description": "Полное описание и условия эффекта показаны на игровой карточке.",
+    "image": "https://raw.githubusercontent.com/WaxMaTHuK/fragpunkhub/main/public/images/shards/epidemic-01.jpg",
+    "sprite": {
+      "column": 2,
+      "row": 26,
+      "columns": 5,
+      "rows": 27
+    },
+    "modes": [
+      "epidemic"
+    ],
+    "roles": [
+      "parasites"
+    ],
+    "verifiedAt": "2026-10-03"
   }
 ]
