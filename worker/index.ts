@@ -42,7 +42,7 @@ const worker = {
     const previewCookie = request.headers.get("Cookie")?.includes(`fragpunk_preview=${previewToken}`) ?? false;
     const enablePreview = url.searchParams.get("preview") === previewToken;
     const previewAllowed = previewCookie || enablePreview;
-    const maintenanceEnabled = true;
+    const maintenanceEnabled = false;
     if (maintenanceEnabled && !adminOrAssetRequest && !previewAllowed) return maintenancePage();
 
 
