@@ -1,70 +1,7 @@
-import { russianText } from "@/lib/russian-content";
-import { ArrowLeft, ShieldCheck } from "lucide-react";
+import "@/app/tier-list/tier.css";
+import { readTierList } from '@/db/tier-list';
+import { TierBoard } from '@/components/tier-board';
+export const dynamic='force-dynamic';
+export const metadata={title:'Тир-лист лансеров | FragPunk Hub'};
+export default async function TierListPage(){let value;try{value=await readTierList(true);}catch{return <main className="wrap tier-main"><a href="/">← На главную</a><h1>Тир-лист временно недоступен</h1><p>Попробуй открыть страницу позже.</p></main>;}return <div className="site-shell fp-tier-page"><header className="site-header"><div className="wrap header-row"><a className="brand" href="/">FRAGPUNK HUB</a><nav className="main-nav"><a href="/">На главную</a><a href="/admin/tier-list">Редактор</a></nav></div></header><main className="wrap tier-main"><p className="eyebrow">FRAGPUNK / LANCER RANKING</p><h1>{value.title}</h1>{value.published?<><div className="fp-tier-meta"><span>{value.mode}</span>{value.patch && <span>Патч {value.patch}</span>}<span>Мнение редакции</span></div><p>{value.description}</p><TierBoard value={value}/></>:<p>Рейтинг готовится. После публикации здесь появятся лансеры в рангах S, A, B, C и D.</p>}</main></div>;}
 
-type Lancer = { name: string; role: string; initials: string; tone: string };
-type Tier = { grade: string; label: string; description: string; lancers: Lancer[] };
-
-const tiers: Tier[] = [
-  {
-    grade: "S", label: "Меняют ход раунда", description: "Сильны почти в любой ситуации",
-    lancers: [
-      { name: "Corona", role: "давление", initials: "C", tone: "pink" },
-      { name: "Hollowpoint", role: "контроль", initials: "H", tone: "cyan" },
-      { name: "Serket", role: "разведка", initials: "S", tone: "purple" },
-    ],
-  },
-  {
-    grade: "A", label: "Надёжный выбор", description: "Раскрываются в командной игре",
-    lancers: [
-      { name: "Nitro", role: "мобильность", initials: "N", tone: "acid" },
-      { name: "Kismet", role: "информация", initials: "K", tone: "purple" },
-      { name: "Axon", role: "инициация", initials: "A", tone: "pink" },
-    ],
-  },
-  {
-    grade: "B", label: "Ситуативно сильны", description: "Нужны карта, план и практика",
-    lancers: [
-      { name: "Pathojen", role: "поддержка", initials: "P", tone: "cyan" },
-      { name: "Spider", role: "ловушки", initials: "S", tone: "acid" },
-      { name: "Zephyr", role: "фланг", initials: "Z", tone: "purple" },
-    ],
-  },
-  {
-    grade: "C", label: "Для своего стиля", description: "Берите, когда знаете план на матч",
-    lancers: [
-      { name: "Broker", role: "защита", initials: "B", tone: "pink" },
-    ],
-  },
-];
-
-export const metadata = { title: "Тир-лист лансеров | ФрагПанк Хаб" };
-
-export default function TierListPage() {
-  return <div className="site-shell tier-page">
-    <header className="site-header"><div className="wrap header-row">
-      <a className="brand" href="/" aria-label="ФрагПанк Хаб — на главную"><span className="brand-mark" aria-hidden="true" /><span className="brand-text"><strong>ФРАГПАНК</strong><small>ХАБ.РУ</small></span></a>
-      <nav className="main-nav" aria-label="Основная навигация"><a href="/#materials">Материалы</a><a href="/#sections">Разделы</a><a className="tier-link active" href="/tier-list">Тир-лист</a><a className="admin-link" href="/admin"><ShieldCheck size={17} /> Редактор</a></nav>
-    </div></header>
-    <main className="wrap tier-main">
-      <section className="tier-hero">
-        <a className="back-link" href="/"><ArrowLeft size={16} /> На главную</a>
-        <p className="eyebrow">Лансеры · версия 1</p>
-        <h1>Тир-лист <span>ФрагПанк</span></h1>
-        <p>Первый рейтинг для обычных и рейтинговых матчей. Это мнение редакции: после патчей и новых лансеров список будет обновляться.</p>
-      </section>
-      <section className="tier-board" aria-label="Тир-лист лансеров">
-        {tiers.map((tier) => <div className={`tier-row tier-${tier.grade.toLowerCase()}`} key={tier.grade}>
-          <div className="tier-grade"><strong>{{S:"1",A:"2",B:"3",C:"4"}[tier.grade]}</strong><span>{tier.label}</span><small>{tier.description}</small></div>
-          <div className="lancer-grid">
-            {tier.lancers.map((lancer) => <article className={`lancer-tile tone-${lancer.tone}`} key={lancer.name}>
-              <span className="lancer-mark" aria-hidden="true">{russianText(lancer.name).charAt(0)}</span>
-              <span><strong>{russianText(lancer.name)}</strong><small>{lancer.role}</small></span>
-            </article>)}
-          </div>
-        </div>)}
-      </section>
-      <p className="tier-note">Список — отправная точка для выбора. Если лансер подходит вашей роли и команде, он может быть сильнее любого места в таблице.</p>
-    </main>
-    <footer><div className="wrap footer-row"><p>Неофициальный русскоязычный информационный портал. ФрагПанк и связанные материалы принадлежат их правообладателям.</p><strong>Проект <span>WaxMaTHuK</span></strong></div></footer>
-  </div>;
-}

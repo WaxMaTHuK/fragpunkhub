@@ -1,0 +1,5 @@
+import { isAdminRequest } from '@/app/admin-auth';
+import { readTierList, writeTierList } from '@/db/tier-list';
+import { validateTierList } from '@/lib/tier-list';
+export async function GET(request:Request) {if(!await isAdminRequest(request)) return Response.json({error:'Войди в редактор'},{status:401}); try{return Response.json(await readTierList());}catch{return Response.json({error:'Не удалось загрузить тир-лист'},{status:503});}}
+export async function POST(request:Request) {const origin=request.headers.get('origin'); if(origin && origin!==new URL(request.url).origin) return Response.json({error:'Недопустимый источник'},{status:403}); if(!await isAdminRequest(request)) return Response.json({error:'Войди в редактор'},{status:401}); try{const value=await request.json(); if(!validateTierList(value))return Response.json({error:'Проверь поля и повторяющихся лансеров'},{status:400}); await writeTierList(value);return Response.json({ok:true});}catch{return Response.json({error:'Не удалось сохранить. Попробуй снова.'},{status:503});}}
